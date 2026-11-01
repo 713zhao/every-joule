@@ -1,0 +1,125 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Plant System</title>
+<style>
+:root{--paper:#f2efe7;--ink:#231e16;--muted:#6f685b;--rule:#ddd6c8;--card:#fbf8f0;--ok:#2f8a4a;--bad:#c0392b}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;padding:28px 16px 48px}
+main{max-width:860px;margin:0 auto}h1{font-size:26px;margin:0 0 4px}p.sub{color:var(--muted);margin:0 0 20px}
+.card{background:var(--card);border:1.5px solid var(--ink);border-radius:14px;box-shadow:4px 4px 0 var(--ink);padding:18px;margin:0 0 26px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.card h2{font-size:19px;margin:0}.tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.card iframe{width:100%;height:600px;border:1px solid var(--rule);border-radius:10px;background:var(--paper)}
+a.open{justify-self:start;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;text-decoration:none;background:var(--paper)}
+ul,ol{margin:6px 0 0;padding-left:20px}li{margin:3px 0}
+details{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;background:var(--paper)}summary{cursor:pointer;font-weight:600}
+h3{font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 2px}
+p.back a{color:var(--muted)}footer{color:var(--muted);font-size:13px;margin-top:8px}
+.listen{font:inherit;color:var(--ink);background:#fff4d6;border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;cursor:pointer;margin-left:8px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}nav.toc a{color:var(--ink);font-size:13px;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;text-decoration:none;background:var(--card)}
+.stack{display:grid;gap:6px;max-width:520px}.stack div{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center}
+.stack b{border:1.5px solid var(--ink);border-radius:8px;padding:4px 8px;text-align:center}.stack span{color:var(--muted)}
+.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--paper)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.box{border:1px solid var(--rule);border-radius:10px;padding:10px 12px;background:var(--paper)}
+.warn{border:1.5px solid #e2a23a;background:#fff4d6;border-radius:10px;padding:10px 12px}
+.btn{font:inherit;color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer;margin:3px}
+.btn.ok{background:#d9f0dc;border-color:var(--ok)}.btn.bad{background:#f7d9d4;border-color:var(--bad)}
+.qrow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px;border-bottom:1px solid var(--rule);padding:6px 0}.msg{font-weight:700;min-height:1.4em}
+.model{border-left:4px solid #4fae4c;padding:6px 12px;background:var(--paper);border-radius:0 8px 8px 0;margin:6px 0}
+@media(max-width:560px){.card iframe{height:560px}}
+</style></head><body><main>
+<h1>Plant System</h1>
+<p class="back"><a href="index.html">&larr; All classes</a> &middot; <a href="p4.html">Primary 4</a></p>
+<p class="sub">Primary 4 Systems: the plant system. Three figures you can play with (each with a <b>Listen</b> button and a voice), quick quizzes, and the key phrases for exam answers.</p>
+<nav class="toc"><a href="#c1">1 Parts and jobs</a><a href="#c2">2 Water moves up</a><a href="#c3">3 Ringing experiment</a><a href="#c4">4 Quiz</a><a href="#c5">5 Exam phrases</a></nav>
+
+<section class="card" id="c1">
+  <div><div class="tag">Overview · parts and functions</div><h2>1. Parts of a plant and their jobs</h2></div>
+  <iframe src="parts.html" title="Parts of a plant" loading="lazy"></iframe>
+  <div><a class="open" href="parts.html">Open full page</a><button class="listen" data-say="A plant system has roots, a stem, leaves and flowers working together. Flowers are for reproduction. Leaves make food by photosynthesis. The stem gives support and transports water and food. Roots absorb water and mineral salts and anchor the plant.">Read key ideas aloud</button></div>
+  <div class="stack">
+    <div><b style="background:#fde3ee">Flower</b><span>Reproduction</span></div>
+    <div><b style="background:#dff2d8">Leaf</b><span>Makes food (photosynthesis)</span></div>
+    <div><b style="background:#e9f4d6">Stem</b><span>Transport and support</span></div>
+    <div><b style="background:#f6ecd4">Root</b><span>Absorption and anchorage</span></div>
+  </div>
+  <div class="wrap"><table><tr><th>Part</th><th>Jobs</th><th>Details</th></tr>
+  <tr><td><b>Roots</b></td><td><b>Anchorage:</b> hold the plant firmly in the ground.<br><b>Absorption:</b> absorb water and mineral salts from the soil.</td><td>Root hairs increase the surface area for faster absorption. Roots grow downward and spread wide to keep the plant steady.</td></tr>
+  <tr><td><b>Stem</b></td><td><b>Support:</b> holds leaves, flowers and fruits up towards sunlight.<br><b>Transport:</b> connects roots to leaves.</td><td><b>Water-carrying tubes</b> carry water and mineral salts from the roots to all parts.<br><b>Food-carrying tubes</b> carry food from the leaves to all parts.</td></tr>
+  <tr><td><b>Leaves</b></td><td><b>Photosynthesis:</b> make food using sunlight, water and carbon dioxide.<br><b>Gaseous exchange</b> through tiny openings (stomata).</td><td>Contain <b>chlorophyll</b>, a green pigment that traps light energy. Make <b>sugar (food)</b> and give out <b>oxygen</b>.</td></tr>
+  <tr><td><b>Flowers</b></td><td><b>Reproduction:</b> develop into fruits and seeds.</td><td>(How flowers reproduce is covered in Primary 5.)</td></tr></table></div>
+  <div><h3>Try it</h3><ul><li>Pick each part to hear its job. Switch the sunlight off: no food is made. Let the soil dry out, then water it. Press Strong wind: the roots hold the plant in place.</li></ul></div>
+</section>
+
+<section class="card" id="c2">
+  <div><div class="tag">Transport · water</div><h2>2. Water moves up the stem</h2></div>
+  <iframe src="plant.html" title="Plant: how water travels up" loading="lazy"></iframe>
+  <div><a class="open" href="plant.html">Open full page</a><button class="listen" data-say="Water and mineral salts travel upward only, from the roots, up the stem, to the leaves and flowers. Food travels in all directions, from the leaves to the stem, roots, flowers, fruits and growing tips.">Read key ideas aloud</button></div>
+  <div class="warn"><b>Key exam point: water vs food</b><ul><li><b>Water and mineral salts</b> travel <b>upward only</b>: roots &rarr; stem &rarr; leaves and flowers.</li><li><b>Food (sugar)</b> travels <b>in all directions</b>: from the leaves to the stem, roots, flowers, fruits and growing tips.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Add red dye, wait 2 hours twice, then look inside the stem: the red water climbs up the water-carrying tubes to the leaves.</li></ul></div>
+  <details><summary>Question: Why did the celery leaves turn reddish?</summary><p>The red water was taken up through the water-carrying tubes in the stem and carried up to the leaves.</p></details>
+</section>
+
+<section class="card" id="c3">
+  <div><div class="tag">Transport · food</div><h2>3. The ringing experiment</h2></div>
+  <iframe src="ring.html" title="The ringing experiment" loading="lazy"></iframe>
+  <div><a class="open" href="ring.html">Open full page</a><button class="listen" data-say="In the ringing experiment, the outer layer of the stem with the food-carrying tubes is removed, but the water-carrying tubes are left. Water can still reach the leaves, so the plant stays alive. Food made in the leaves cannot travel down past the ring, so it collects and the stem swells above the ring.">Read key ideas aloud</button></div>
+  <div class="two">
+    <div class="box"><h3>Outer layer removed</h3><ul><li>Water-carrying tubes are still there &rarr; water reaches the leaves &rarr; <b>plant stays alive</b>.</li><li>Food cannot travel down past the ring &rarr; <b>swelling ABOVE the ring</b>.</li></ul></div>
+    <div class="box"><h3>Inner layer cut too</h3><ul><li>Water-carrying tubes are cut &rarr; water cannot reach the leaves &rarr; <b>leaves wilt</b> and the plant dies.</li></ul></div>
+  </div>
+  <div><h3>Try it</h3><ul><li>Remove the outer layer only, wait 4 weeks, and look at the cross-section. Then press Start again and try the deep cut.</li></ul></div>
+  <details><summary>Question: Why does the swelling form above the ring and not below it?</summary><p>Food is made in the leaves and travels down the food-carrying tubes. It cannot pass the ring, so it collects just above the ring.</p></details>
+  <details><summary>Question: Why do the leaves stay green after the outer layer is removed?</summary><p>The water-carrying tubes are not removed, so water still travels up to the leaves.</p></details>
+</section>
+
+<section class="card" id="c4">
+  <div><div class="tag">Check yourself</div><h2>4. Quick quiz</h2></div>
+  <div><h3>Which part does this job?</h3><div id="job"></div><div class="msg" id="jobmsg"></div></div>
+  <div><h3>Which way does it travel?</h3><div id="way"></div><div class="msg" id="waymsg"></div></div>
+  <div><h3>True or false?</h3><div id="tf"></div><div class="msg" id="tfmsg"></div></div>
+</section>
+
+<section class="card" id="c5">
+  <div><div class="tag">Exam skills</div><h2>5. Key phrases for exam answers</h2></div>
+  <div><button class="listen" style="margin-left:0" data-say="Roots absorb water and mineral salts from the soil and anchor the plant firmly into the ground. The stem supports the leaves to trap sunlight for photosynthesis and transports water to all parts of the plant. Leaves contain chlorophyll to trap light energy to make food during photosynthesis.">Read the phrases aloud</button></div>
+  <p class="model"><b>Roots:</b> &ldquo;Roots <b>absorb water and mineral salts</b> from the soil and <b>anchor the plant firmly</b> into the ground.&rdquo;</p>
+  <p class="model"><b>Stem:</b> &ldquo;The stem <b>supports the leaves to trap sunlight</b> for photosynthesis and <b>transports water</b> to all parts of the plant.&rdquo;</p>
+  <p class="model"><b>Leaves:</b> &ldquo;Leaves contain <b>chlorophyll to trap light energy</b> to make food during photosynthesis.&rdquo;</p>
+  <details><summary>Practice 1: A plant was pulled out and replanted, but many root hairs were damaged. It wilted. Explain.</summary><p class="model">Root hairs increase the surface area for absorbing water. With fewer root hairs, less water was absorbed from the soil, so not enough water reached the leaves.</p></details>
+  <details><summary>Practice 2: Why do plants kept in a dark cupboard eventually die?</summary><p class="model">Without light, the leaves cannot trap light energy to make food by photosynthesis. The plant has no food, so it dies.</p></details>
+  <details><summary>Practice 3: A ring of the outer layer was removed from a tree stem. After some weeks a swelling formed above the ring. Explain.</summary><p class="model">The food-carrying tubes in the outer layer were removed. Food made in the leaves could not travel down past the ring, so it collected above the ring and caused the swelling.</p></details>
+  <details><summary>Practice 4: The roots of a ringed tree eventually die, though the leaves stayed green for a while. Why?</summary><p class="model">Food from the leaves cannot travel down past the ring to the roots. The roots get no food, so they die. Then they cannot absorb water, and the whole tree dies.</p></details>
+  <details><summary>Practice 5: Why do leaves of most plants grow facing the light?</summary><p class="model">So they can trap more light energy for photosynthesis, to make more food for the plant.</p></details>
+</section>
+
+<p style="border:1.5px dashed var(--ink);border-radius:10px;padding:10px 12px;background:#fff9ea"><b>Next in P5:</b> what happens to the water when it reaches the leaves? <a href="transport.html">Plant transport system &rarr;</a></p>
+<footer>Figures drawn with the open-source Colorfigures skill (MIT, April Zhu). Voice uses your browser&rsquo;s built-in speech; if it is silent, check that your device has an English voice installed.</footer>
+<script>
+const speak = t => { if (typeof speechSynthesis === 'undefined') return; speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t); u.lang = 'en-GB'; u.rate = .92; speechSynthesis.speak(u); };
+document.querySelectorAll('.listen').forEach(b => b.onclick = () => speak(b.dataset.say));
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+function choiceQuiz(id, msgId, items, opts){
+  const box = document.getElementById(id), msg = document.getElementById(msgId); let right = 0, done = 0;
+  items.forEach(([q, ans, why]) => { const row = el('div', 'qrow'); row.appendChild(el('span', '', q)); const bs = el('span');
+    opts.forEach(o => { const b = el('button', 'btn', o); bs.appendChild(b);
+      b.onclick = () => { if (row.dataset.done) return; row.dataset.done = 1; done++; const ok = o === ans; if (ok) right++;
+        b.classList.add(ok ? 'ok' : 'bad'); if (!ok) [...bs.children].find(x => x.textContent === ans).classList.add('ok');
+        if (why) row.appendChild(el('div', '', (ok ? 'Correct. ' : 'Not quite. ') + why)).style.cssText = 'flex-basis:100%;color:var(--muted);font-size:14px';
+        if (done === items.length){ msg.textContent = 'Score: ' + right + ' / ' + items.length; msg.style.color = right === items.length ? 'var(--ok)' : 'var(--ink)'; } }; });
+    row.appendChild(bs); box.appendChild(row); });
+}
+choiceQuiz('job', 'jobmsg', [
+  ['Absorbs water and mineral salts', 'Roots', ''], ['Holds the plant firmly in the ground', 'Roots', 'This is called anchorage.'],
+  ['Makes food by photosynthesis', 'Leaf', ''], ['Holds the leaves up towards sunlight', 'Stem', ''],
+  ['Carries food from the leaves to other parts', 'Stem', 'In the food-carrying tubes.'], ['Develops into fruits and seeds', 'Flower', ''],
+  ['Contains chlorophyll to trap light energy', 'Leaf', ''], ['Takes in carbon dioxide through stomata', 'Leaf', '']], ['Roots', 'Stem', 'Leaf', 'Flower']);
+choiceQuiz('way', 'waymsg', [
+  ['Water', 'Up only', 'From the roots up to the leaves and flowers.'], ['Mineral salts', 'Up only', 'They travel with the water.'],
+  ['Food (sugar)', 'All directions', 'From the leaves to every part, including the roots.']], ['Up only', 'All directions']);
+choiceQuiz('tf', 'tfmsg', [
+  ['Food made in the leaves can travel down to the roots.', 'True', ''],
+  ['Water travels down from the leaves to the roots.', 'False', 'Water travels upward only.'],
+  ['After ringing (outer layer only), the swelling forms below the ring.', 'False', 'It forms above the ring, where food collects.'],
+  ['After ringing (outer layer only), the leaves quickly wilt.', 'False', 'The water-carrying tubes are not cut, so water still reaches the leaves.'],
+  ['Root hairs increase the surface area for absorbing water.', 'True', ''],
+  ['Leaves give out oxygen during photosynthesis.', 'True', '']], ['True', 'False']);
+</script>
+</main></body></html>

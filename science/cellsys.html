@@ -1,0 +1,110 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cell System</title>
+<style>
+:root{--paper:#f2efe7;--ink:#231e16;--muted:#6f685b;--rule:#ddd6c8;--card:#fbf8f0;--ok:#2f8a4a;--bad:#c0392b}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;padding:28px 16px 48px}
+main{max-width:860px;margin:0 auto}h1{font-size:26px;margin:0 0 4px}p.sub{color:var(--muted);margin:0 0 20px}
+.card{background:var(--card);border:1.5px solid var(--ink);border-radius:14px;box-shadow:4px 4px 0 var(--ink);padding:18px;margin:0 0 26px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.card h2{font-size:19px;margin:0}.tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.card iframe{width:100%;height:580px;border:1px solid var(--rule);border-radius:10px;background:var(--paper)}
+a.open{justify-self:start;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;text-decoration:none;background:var(--paper)}
+ul{margin:6px 0 0;padding-left:20px}li{margin:3px 0}
+details{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;background:var(--paper)}summary{cursor:pointer;font-weight:600}
+h3{font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 2px}
+p.back a{color:var(--muted)}footer{color:var(--muted);font-size:13px;margin-top:8px}
+.listen{font:inherit;color:var(--ink);background:#fff4d6;border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;cursor:pointer;margin-left:8px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}nav.toc a{color:var(--ink);font-size:13px;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;text-decoration:none;background:var(--card)}
+.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--paper)}td.c{text-align:center;font-weight:700}td.no{color:var(--bad)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.box{border:1px solid var(--rule);border-radius:10px;padding:10px 12px;background:var(--paper)}
+.warn{border:1.5px solid #e2a23a;background:#fff4d6;border-radius:10px;padding:10px 12px}
+.btn{font:inherit;color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer;margin:3px}
+.btn.ok{background:#d9f0dc;border-color:var(--ok)}.btn.bad{background:#f7d9d4;border-color:var(--bad)}
+.qrow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px;border-bottom:1px solid var(--rule);padding:6px 0}.msg{font-weight:700;min-height:1.4em}
+.model{border-left:4px solid #9a6fc4;padding:6px 12px;background:var(--paper);border-radius:0 8px 8px 0;margin:6px 0}
+@media(max-width:560px){.card iframe{height:540px}}
+</style></head><body><main>
+<h1>Cell System</h1>
+<p class="back"><a href="index.html">&larr; All classes</a> &middot; <a href="p5.html">Primary 5</a></p>
+<p class="sub">Primary 5 Systems: cells, the building blocks of life. Three figures you can play with (each with a <b>Listen</b> button and a voice), quick quizzes, and practice questions.</p>
+<nav class="toc"><a href="#c1">1 What is a cell?</a><a href="#c2">2 Plant vs animal cells</a><a href="#c3">3 Cell division</a><a href="#c4">4 Quiz</a><a href="#c5">5 Practice</a></nav>
+
+<section class="card" id="c1">
+  <div><div class="tag">What is a cell?</div><h2>1. Under the microscope</h2></div>
+  <iframe src="scope.html" title="Under the microscope" loading="lazy"></iframe>
+  <div><a class="open" href="scope.html">Open full page</a><button class="listen" data-say="A cell is the microscopic functional unit of all living things. Some living things are unicellular: they are made of just one cell, like bacteria and amoeba. Others are multicellular: they are made of many cells, like humans and trees.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3><ul><li>A <b>cell</b> is the <b>microscopic functional unit</b> of all living things. Most cells can only be seen with a microscope.</li><li><b>Unicellular</b> organisms are made of one cell, e.g. <b>bacteria, amoeba</b>.</li><li><b>Multicellular</b> organisms are made of many cells, e.g. <b>humans, trees</b>.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Turn the focus knob to see the onion cells clearly. Then try each slide. Which ones have a cell wall? Which have chloroplasts? Which are unicellular?</li></ul></div>
+  <details><summary>Question: Why do onion skin cells have no chloroplasts?</summary><p>The onion bulb grows underground and is not exposed to light, so its cells do not carry out photosynthesis.</p></details>
+  <details><summary>Question: How can you tell the cheek cells are animal cells?</summary><p>They have no cell wall, so their shape is irregular. They also have no chloroplasts.</p></details>
+</section>
+
+<section class="card" id="c2">
+  <div><div class="tag">Structure of cells</div><h2>2. Plant cell and animal cell</h2></div>
+  <iframe src="cells.html" title="Plant cell and animal cell" loading="lazy"></iframe>
+  <div><a class="open" href="cells.html">Open full page</a><button class="listen" data-say="Both plant and animal cells have a cell membrane, cytoplasm and a nucleus. The cell membrane controls the movement of substances into and out of the cell. Cytoplasm is a jelly-like substance where chemical reactions take place. The nucleus controls all cell activities and contains genetic material. Only plant cells have a cell wall, which gives shape and support, and chloroplasts, which contain chlorophyll to trap sunlight for making food.">Read key ideas aloud</button></div>
+  <div class="wrap"><table><tr><th>Cell part</th><th>Animal cell?</th><th>Plant cell?</th><th>Function</th></tr>
+  <tr><td><b>Cell membrane</b></td><td class="c">Yes</td><td class="c">Yes</td><td>Controls the movement of substances into and out of the cell.</td></tr>
+  <tr><td><b>Cytoplasm</b></td><td class="c">Yes</td><td class="c">Yes</td><td>Jelly-like substance where chemical reactions take place.</td></tr>
+  <tr><td><b>Nucleus</b></td><td class="c">Yes</td><td class="c">Yes</td><td>Controls all cell activities; contains <b>genetic material (DNA in chromosomes)</b>.</td></tr>
+  <tr><td><b>Cell wall</b></td><td class="c no">No</td><td class="c">Yes</td><td>Rigid outer layer that gives the plant cell its shape and support.</td></tr>
+  <tr><td><b>Chloroplasts</b></td><td class="c no">No</td><td class="c">Yes (green parts only)</td><td>Contain <b>chlorophyll</b> to trap sunlight for making food.</td></tr></table></div>
+  <div class="warn"><b>Exam watch-out: do ALL plant cells have chloroplasts?</b> <b>No!</b> Root cells, onion bulb cells and cells inside the stem do <b>not</b> have chloroplasts. They are not exposed to light and do not carry out photosynthesis.</div>
+  <div><h3>Try it</h3><ul><li>Pick each part. Change the plant cell to a root or onion cell and pick chloroplast. Press both cells: the animal cell squashes, the plant cell keeps its shape.</li></ul></div>
+  <details><summary>Question: When both cells were pressed, why did only the animal cell change shape?</summary><p>The plant cell has a rigid cell wall that gives it shape and support. The animal cell has no cell wall.</p></details>
+</section>
+
+<section class="card" id="c3">
+  <div><div class="tag">Cell division</div><h2>3. Cells divide: growth and repair</h2></div>
+  <iframe src="division.html" title="Cells divide: growth and repair" loading="lazy"></iframe>
+  <div><a class="open" href="division.html">Open full page</a><button class="listen" data-say="Growth and repair happen when cells divide to form new cells. One cell divides into two. A cut on your skin heals because the cells around it divide and fill the gap. A plant or a child grows because its cells divide and the new cells grow.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3><ul><li><b>Growth and repair</b> happen when cells <b>divide</b> to form new cells. One cell divides into two.</li><li>A cut heals because the cells beside it divide and fill the gap.</li><li>A child grows taller because cells divide and the new cells grow.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Make a cut, then press Wait 1 day twice. Watch the cell count go from 32 down to 24 and back to 32.</li></ul></div>
+</section>
+
+<section class="card" id="c4">
+  <div><div class="tag">Check yourself</div><h2>4. Quick quiz</h2></div>
+  <div><h3>Which cell has it?</h3><div id="has"></div><div class="msg" id="hasmsg"></div></div>
+  <div><h3>Which part does this job?</h3><div id="job"></div><div class="msg" id="jobmsg"></div></div>
+  <div><h3>Unicellular or multicellular?</h3><div id="uni"></div><div class="msg" id="unimsg"></div></div>
+  <div><h3>True or false?</h3><div id="tf"></div><div class="msg" id="tfmsg"></div></div>
+</section>
+
+<section class="card" id="c5">
+  <div><div class="tag">Exam skills</div><h2>5. Practice questions</h2></div>
+  <details><summary>Practice 1: A cell has a nucleus, cytoplasm, a cell membrane and a cell wall, but no chloroplasts. Is it a plant or animal cell? Explain.</summary><p class="model">It is a plant cell, because it has a cell wall. It has no chloroplasts because it is from a part of the plant not exposed to light, such as the root.</p></details>
+  <details><summary>Practice 2: Why do leaf cells have chloroplasts but root cells do not?</summary><p class="model">Leaf cells are exposed to light. Their chloroplasts contain chlorophyll to trap light energy to make food. Root cells are underground, are not exposed to light and do not make food.</p></details>
+  <details><summary>Practice 3: Which part of the cell would you remove to stop it from controlling its activities? Why?</summary><p class="model">The nucleus. It controls all the activities of the cell and contains the genetic material.</p></details>
+  <details><summary>Practice 4: A plant cell keeps its shape even when the plant is pressed. Explain.</summary><p class="model">The plant cell has a rigid cell wall that gives it a fixed shape and support.</p></details>
+  <details><summary>Practice 5: How does a cut on your finger heal?</summary><p class="model">The cells around the cut divide to form new cells. The new cells fill the gap and repair the skin.</p></details>
+</section>
+
+<footer>Figures drawn with the open-source Colorfigures skill (MIT, April Zhu). Voice uses your browser&rsquo;s built-in speech; if it is silent, check that your device has an English voice installed.</footer>
+<script>
+const speak = t => { if (typeof speechSynthesis === 'undefined') return; speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t); u.lang = 'en-GB'; u.rate = .92; speechSynthesis.speak(u); };
+document.querySelectorAll('.listen').forEach(b => b.onclick = () => speak(b.dataset.say));
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+function choiceQuiz(id, msgId, items, opts){
+  const box = document.getElementById(id), msg = document.getElementById(msgId); let right = 0, done = 0;
+  items.forEach(([q, ans, why]) => { const row = el('div', 'qrow'); row.appendChild(el('span', '', q)); const bs = el('span');
+    opts.forEach(o => { const b = el('button', 'btn', o); bs.appendChild(b);
+      b.onclick = () => { if (row.dataset.done) return; row.dataset.done = 1; done++; const ok = o === ans; if (ok) right++;
+        b.classList.add(ok ? 'ok' : 'bad'); if (!ok) [...bs.children].find(x => x.textContent === ans).classList.add('ok');
+        if (why) row.appendChild(el('div', '', (ok ? 'Correct. ' : 'Not quite. ') + why)).style.cssText = 'flex-basis:100%;color:var(--muted);font-size:14px';
+        if (done === items.length){ msg.textContent = 'Score: ' + right + ' / ' + items.length; msg.style.color = right === items.length ? 'var(--ok)' : 'var(--ink)'; } }; });
+    row.appendChild(bs); box.appendChild(row); });
+}
+choiceQuiz('has', 'hasmsg', [['Cell membrane', 'Both', ''], ['Cytoplasm', 'Both', ''], ['Nucleus', 'Both', ''], ['Cell wall', 'Plant only', 'Animal cells have no cell wall.'], ['Chloroplasts', 'Plant only', 'And only in green parts of the plant.']], ['Both', 'Plant only', 'Animal only']);
+choiceQuiz('job', 'jobmsg', [
+  ['Controls the movement of substances in and out', 'Membrane', ''], ['Jelly where chemical reactions take place', 'Cytoplasm', ''],
+  ['Controls all cell activities; holds genetic material', 'Nucleus', ''], ['Gives a plant cell its shape and support', 'Cell wall', ''],
+  ['Traps sunlight to make food', 'Chloroplast', 'It contains chlorophyll.']], ['Membrane', 'Cytoplasm', 'Nucleus', 'Cell wall', 'Chloroplast']);
+choiceQuiz('uni', 'unimsg', [['Bacteria', 'Unicellular', ''], ['Amoeba', 'Unicellular', ''], ['A human', 'Multicellular', ''], ['A tree', 'Multicellular', '']], ['Unicellular', 'Multicellular']);
+choiceQuiz('tf', 'tfmsg', [
+  ['All plant cells have chloroplasts.', 'False', 'Root cells, onion bulb cells and inner stem cells have none.'],
+  ['Animal cells have a nucleus.', 'True', ''],
+  ['Animal cells have a cell wall.', 'False', 'Only plant cells have a cell wall.'],
+  ['The nucleus contains genetic material.', 'True', ''],
+  ['Growth and repair happen when cells divide.', 'True', ''],
+  ['A cell is too small to see with our eyes alone (most cells).', 'True', 'We need a microscope.']], ['True', 'False']);
+</script>
+</main></body></html>

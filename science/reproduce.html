@@ -1,0 +1,137 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reproduction in Plants</title>
+<style>
+:root{--paper:#f2efe7;--ink:#231e16;--muted:#6f685b;--rule:#ddd6c8;--card:#fbf8f0;--ok:#2f8a4a;--bad:#c0392b;--red:#d93a3a;--blue:#4a6fd0}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;padding:28px 16px 48px}
+main{max-width:860px;margin:0 auto}h1{font-size:26px;margin:0 0 4px}p.sub{color:var(--muted);margin:0 0 20px}
+.card{background:var(--card);border:1.5px solid var(--ink);border-radius:14px;box-shadow:4px 4px 0 var(--ink);padding:18px;margin:0 0 26px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.card h2{font-size:19px;margin:0}.tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.card iframe{width:100%;height:600px;border:1px solid var(--rule);border-radius:10px;background:var(--paper)}
+a.open{justify-self:start;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;text-decoration:none;background:var(--paper)}
+ul{margin:6px 0 0;padding-left:20px}li{margin:3px 0}
+details{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;background:var(--paper)}summary{cursor:pointer;font-weight:600}
+h3{font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 2px}
+p.back a{color:var(--muted)}footer{color:var(--muted);font-size:13px;margin-top:8px}
+.listen{font:inherit;color:var(--ink);background:#fff4d6;border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;cursor:pointer;margin-left:8px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}nav.toc a{color:var(--ink);font-size:13px;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;text-decoration:none;background:var(--card)}
+.path{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-weight:700;margin:4px 0}.path span{border:1.5px solid var(--ink);border-radius:8px;padding:3px 9px;background:var(--paper)}.path i{font-style:normal;color:var(--muted)}
+.path.o2 span{background:#fbd9d6}.path.co2 span{background:#dbe3f7}
+.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--paper)}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.box{border:1px solid var(--rule);border-radius:10px;padding:10px 12px;background:var(--paper)}
+.recap{border:1.5px dashed var(--ink);border-radius:10px;padding:10px 12px;background:#fff9ea}
+.btn{font:inherit;color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer;margin:3px}
+.btn.ok{background:#d9f0dc;border-color:var(--ok)}.btn.bad{background:#f7d9d4;border-color:var(--bad)}.btn[disabled]{opacity:.45;cursor:default}
+.order{display:flex;flex-wrap:wrap;gap:6px;min-height:40px;border:1px dashed var(--rule);border-radius:10px;padding:8px}
+.qrow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px;border-bottom:1px solid var(--rule);padding:6px 0}.msg{font-weight:700;min-height:1.4em}
+.model{border-left:4px solid #f27aa6;padding:6px 12px;background:var(--paper);border-radius:0 8px 8px 0;margin:6px 0}
+@media(max-width:560px){.card iframe{height:560px}}
+</style></head><body><main>
+<h1>Reproduction in Plants</h1>
+<p class="back"><a href="index.html">&larr; All classes</a> &middot; <a href="p5.html">Primary 5</a> &middot; <a href="plantsys.html">P4: Plant system</a> &middot; <a href="transport.html">P5: Plant transport</a></p>
+<p class="sub">Primary 5 Cycles: how flowering plants reproduce (pollination, fertilisation, fruits and seeds, dispersal, germination) and how non-flowering plants reproduce by spores. Four figures you can play with (each with a <b>Listen</b> button and a voice), quizzes and practice questions.</p>
+<nav class="toc"><a href="#c1">1 The flower</a><a href="#c2">2 Dispersal</a><a href="#c3">3 Germination</a><a href="#c4">4 Spores</a><a href="#c5">5 Quiz</a><a href="#c6">6 Practice</a></nav>
+
+<div class="recap"><b>Four stages:</b>
+  <div class="path"><span>Pollination</span><i>&rarr;</i><span>Fertilisation</span><i>&rarr;</i><span>Seed and fruit formation</span><i>&rarr;</i><span>Dispersal and germination</span></div>
+  Reproduction keeps the <b>species going</b> (continuity of life).</div>
+<p></p>
+
+<section class="card" id="c1">
+  <div><div class="tag">Pollination · fertilisation · fruits and seeds</div><h2>1. Inside a flower</h2></div>
+  <iframe src="flower.html" title="Inside a flower" loading="lazy"></iframe>
+  <div><a class="open" href="flower.html">Open full page</a><button class="listen" data-say="The male parts of a flower are the anther, which makes pollen grains, and the filament, which holds the anther up. The female parts are the stigma, which is sticky and receives pollen, the style, which joins the stigma to the ovary, and the ovary, which contains the ovules. Pollination is the transfer of pollen grains from the anther to the stigma. Fertilisation is when the male reproductive cell joins with the female reproductive cell in the ovule. After fertilisation, the ovary becomes the fruit and the ovules become the seeds.">Read key ideas aloud</button></div>
+  <div class="wrap"><table><tr><th>Part</th><th>Male / female</th><th>Function</th></tr>
+  <tr><td><b>Anther</b></td><td>Male</td><td>Produces and holds <b>pollen grains</b> (male reproductive cells).</td></tr>
+  <tr><td><b>Filament</b></td><td>Male</td><td>Holds up the anther so wind or insects can reach the pollen.</td></tr>
+  <tr><td><b>Stigma</b></td><td>Female</td><td><b>Sticky</b> surface that receives pollen grains.</td></tr>
+  <tr><td><b>Style</b></td><td>Female</td><td>Tube connecting the stigma to the ovary.</td></tr>
+  <tr><td><b>Ovary</b></td><td>Female</td><td>Contains the <b>ovules</b> (female reproductive cells).</td></tr></table></div>
+  <div><h3>The process</h3><ul>
+    <li><b>Pollination:</b> transfer of pollen grains from the <b>anther</b> to the <b>stigma</b>. Agents: wind, insects, birds.</li>
+    <li><b>Fertilisation:</b> the male reproductive cell <b>fuses</b> with the female reproductive cell in the <b>ovule</b> (a pollen tube grows down the style to reach it).</li>
+    <li><b>After fertilisation:</b> ovary &rarr; <b>fruit</b>; ovule &rarr; <b>seed</b>. The petals, stamens, stigma and style wither.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Pick each part to hear its job. Then pollinate (by an insect or by the wind), fertilise, and wait two weeks. Count the ovules and then the seeds.</li></ul></div>
+  <details><summary>Question: Pollination has happened, but no fruit forms. Why?</summary><p class="model">Fertilisation did not take place, so the ovary did not develop into a fruit. Pollination alone is not enough.</p></details>
+</section>
+
+<section class="card" id="c2">
+  <div><div class="tag">Seed dispersal</div><h2>2. Spreading the seeds</h2></div>
+  <iframe src="disperse.html" title="Seed dispersal" loading="lazy"></iframe>
+  <div><a class="open" href="disperse.html">Open full page</a><button class="listen" data-say="Seeds are dispersed away from the parent plant so that the young plants do not compete with the parent or with each other for light, water, space and mineral salts. Seeds can be dispersed by wind, by water, by animals, or by explosive action.">Read key ideas aloud</button></div>
+  <div><h3>Why disperse?</h3><p>To prevent <b>competition</b> for <b>light, water, space and mineral salts</b> with the parent plant and with each other.</p></div>
+  <div class="wrap"><table><tr><th>Method</th><th>Features of the fruit or seed</th><th>Examples</th></tr>
+  <tr><td><b>Wind</b></td><td>Light; wing-like parts or fine hairs</td><td>Angsana, dandelion, shorea</td></tr>
+  <tr><td><b>Water</b></td><td>Fibrous husk traps air so it floats; waterproof skin</td><td>Coconut, pong pong (sea mango)</td></tr>
+  <tr><td><b>Animals</b></td><td>Juicy, brightly coloured (eaten); or hooks that stick to fur</td><td>Rambutan, chilli, love grass</td></tr>
+  <tr><td><b>Explosive action</b></td><td>Dry pods split open suddenly and fling the seeds</td><td>Balsam, rubber seed</td></tr></table></div>
+  <div><h3>Try it</h3><ul><li>Try &ldquo;no dispersal&rdquo; first and let the seedlings grow: they are crowded and weak. Then try each way and compare how many seedlings have space.</li></ul></div>
+</section>
+
+<section class="card" id="c3">
+  <div><div class="tag">Germination</div><h2>3. What seeds need to germinate</h2></div>
+  <iframe src="germinate.html" title="What do seeds need to germinate?" loading="lazy"></iframe>
+  <div><a class="open" href="germinate.html">Open full page</a><button class="listen" data-say="Germination is when a seed grows into a seedling. Seeds need water, oxygen and warmth to germinate. Remember WOW. Light is not needed for germination.">Read key ideas aloud</button></div>
+  <div class="recap"><b>WOW:</b> <b>W</b>ater, <b>O</b>xygen, <b>W</b>armth. <b>Light is NOT needed for germination!</b> (A seedling needs light later, once its leaves start making food.)</div>
+  <div><h3>Try it</h3><ul><li>Wait one day at a time. Lift the boxes to look at D (fridge) and E (dark). Which set-ups germinated? What was missing in each of the others?</li></ul></div>
+  <details><summary>Question: Why was the water in set-up C boiled and then covered with oil?</summary><p class="model">Boiling removes the dissolved air (oxygen) from the water, and the layer of oil stops air from dissolving back in. This makes sure the seeds have no oxygen.</p></details>
+  <details><summary>Question: The seedlings in E are tall, thin and yellow. Did they germinate?</summary><p class="model">Yes. They germinated without light, which shows light is not needed for germination. They are yellow because they need light to make chlorophyll and food as they grow.</p></details>
+</section>
+
+<section class="card" id="c4">
+  <div><div class="tag">Non-flowering plants</div><h2>4. Ferns and mosses: spores</h2></div>
+  <iframe src="fern.html" title="Ferns reproduce by spores" loading="lazy"></iframe>
+  <div><a class="open" href="fern.html">Open full page</a><button class="listen" data-say="Non-flowering plants such as ferns and mosses do not produce flowers, fruits or seeds. They reproduce by spores, which are made in spore bags on the underside of the leaves. Spores are tiny and light and are carried by the wind. They grow in damp, shady places.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3><ul><li>Non-flowering plants such as <b>ferns and mosses</b> do <b>not</b> produce flowers, fruits or seeds.</li><li>They reproduce by <b>spores</b>, made in <b>spore bags</b> (sporangia) on the <b>underside of the leaves</b>.</li><li>Spores are tiny and light and are dispersed by the <b>wind</b>. They grow in <b>damp, shady</b> places.</li><li><b>Fungi</b> (such as mushrooms and bread mould) also reproduce by spores, but fungi are not plants.</li></ul></div>
+</section>
+
+<section class="card" id="c5">
+  <div><div class="tag">Check yourself</div><h2>5. Quick quiz</h2></div>
+  <div><h3>Put the stages in order</h3><div id="pool1"></div><div class="order" id="ord1"></div><div class="msg" id="m1"></div></div>
+  <div><h3>Male or female part?</h3><div id="mf"></div><div class="msg" id="mfmsg"></div></div>
+  <div><h3>How is it dispersed?</h3><div id="dm"></div><div class="msg" id="dmmsg"></div></div>
+  <div><h3>True or false?</h3><div id="tf"></div><div class="msg" id="tfmsg"></div></div>
+</section>
+
+<section class="card" id="c6">
+  <div><div class="tag">Exam skills</div><h2>6. Practice questions</h2></div>
+  <details><summary>Practice 1: What is the difference between pollination and fertilisation?</summary><p class="model">Pollination is the transfer of pollen grains from the anther to the stigma. Fertilisation is the fusion of the male reproductive cell with the female reproductive cell in the ovule. Pollination happens first.</p></details>
+  <details><summary>Practice 2: A fruit has 12 seeds. How many ovules were fertilised? Explain.</summary><p class="model">At least 12. Each seed develops from one fertilised ovule.</p></details>
+  <details><summary>Practice 3: Why is it important for seeds to be dispersed away from the parent plant?</summary><p class="model">So that the young plants do not compete with the parent plant and with one another for light, water, space and mineral salts, and so the plant can grow in new places.</p></details>
+  <details><summary>Practice 4: A flower has dull petals, no scent, and anthers that hang outside the flower. How is it likely pollinated? Explain.</summary><p class="model">By wind. It does not need bright petals or scent to attract insects, and the hanging anthers let the wind blow the pollen away.</p></details>
+  <details><summary>Practice 5: Ali puts bean seeds on damp cotton wool in a dark cupboard. They germinate. What does this show?</summary><p class="model">Light is not needed for germination. The seeds had water, oxygen (air) and warmth.</p></details>
+</section>
+
+<p class="recap"><b>Next:</b> how do humans reproduce? <a href="humanrep.html">Reproduction in humans &rarr;</a></p>
+<footer>Figures drawn with the open-source Colorfigures skill (MIT, April Zhu). Voice uses your browser&rsquo;s built-in speech; if it is silent, check that your device has an English voice installed.</footer>
+<script>
+const speak = t => { if (typeof speechSynthesis === 'undefined') return; speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t); u.lang = 'en-GB'; u.rate = .92; speechSynthesis.speak(u); };
+document.querySelectorAll('.listen').forEach(b => b.onclick = () => speak(b.dataset.say));
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+function orderQuiz(poolId, ordId, msgId, items, done){
+  const pool = document.getElementById(poolId), order = document.getElementById(ordId), msg = document.getElementById(msgId); let n = 0;
+  [...items].sort(() => Math.random() - .5).forEach(o => { const b = el('button', 'btn', o); pool.appendChild(b);
+    b.onclick = () => { if (b.disabled) return;
+      if (o === items[n]){ b.disabled = true; b.classList.add('ok'); order.appendChild(el('span', 'btn ok', (n + 1) + '. ' + o)); n++; msg.textContent = '';
+        if (n === items.length){ msg.textContent = done; msg.style.color = 'var(--ok)'; speak(done); } }
+      else { b.classList.add('bad'); setTimeout(() => b.classList.remove('bad'), 600); msg.textContent = o + ' is not next.'; msg.style.color = 'var(--bad)'; } }; });
+}
+orderQuiz('pool1', 'ord1', 'm1', ['Pollination', 'Fertilisation', 'Seed and fruit formation', 'Dispersal', 'Germination'], 'Well done! Pollination, fertilisation, seeds and fruits form, the seeds are dispersed, and then they germinate.');
+function choiceQuiz(id, msgId, items, opts){
+  const box = document.getElementById(id), msg = document.getElementById(msgId); let right = 0, done = 0;
+  items.forEach(([q, ans, why]) => { const row = el('div', 'qrow'); row.appendChild(el('span', '', q)); const bs = el('span');
+    opts.forEach(o => { const b = el('button', 'btn', o); bs.appendChild(b);
+      b.onclick = () => { if (row.dataset.done) return; row.dataset.done = 1; done++; const ok = o === ans; if (ok) right++;
+        b.classList.add(ok ? 'ok' : 'bad'); if (!ok) [...bs.children].find(x => x.textContent === ans).classList.add('ok');
+        if (why) row.appendChild(el('div', '', (ok ? 'Correct. ' : 'Not quite. ') + why)).style.cssText = 'flex-basis:100%;color:var(--muted);font-size:14px';
+        if (done === items.length){ msg.textContent = 'Score: ' + right + ' / ' + items.length; msg.style.color = right === items.length ? 'var(--ok)' : 'var(--ink)'; } }; });
+    row.appendChild(bs); box.appendChild(row); });
+}
+choiceQuiz('mf', 'mfmsg', [['Anther', 'Male', ''], ['Stigma', 'Female', ''], ['Filament', 'Male', ''], ['Ovary', 'Female', ''], ['Style', 'Female', ''], ['Ovule', 'Female', 'It becomes the seed.']], ['Male', 'Female']);
+choiceQuiz('dm', 'dmmsg', [['Light fruit with a wing', 'Wind', ''], ['Fibrous husk that floats', 'Water', ''], ['Juicy, brightly coloured fruit', 'Animals', ''],
+  ['Pod that splits open suddenly when dry', 'Explosive', ''], ['Fruit with tiny hooks', 'Animals', 'The hooks catch on fur or clothes.'], ['Seed with fine hairs like a parachute', 'Wind', '']], ['Wind', 'Water', 'Animals', 'Explosive']);
+choiceQuiz('tf', 'tfmsg', [
+  ['After fertilisation, the ovary becomes the fruit.', 'True', ''], ['After fertilisation, the ovule becomes the fruit.', 'False', 'The ovule becomes the seed.'],
+  ['Seeds need light to germinate.', 'False', 'They need water, oxygen and warmth.'], ['Ferns produce seeds.', 'False', 'Ferns reproduce by spores.'],
+  ['Spore bags are found on the underside of fern leaves.', 'True', ''], ['Pollination is the transfer of pollen from the anther to the stigma.', 'True', '']], ['True', 'False']);
+</script>
+</main></body></html>

@@ -1,0 +1,127 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Breathing and Circulation</title>
+<style>
+:root{--paper:#f2efe7;--ink:#231e16;--muted:#6f685b;--rule:#ddd6c8;--card:#fbf8f0;--ok:#2f8a4a;--bad:#c0392b;--red:#d93a3a;--blue:#4a6fd0}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;padding:28px 16px 48px}
+main{max-width:860px;margin:0 auto}h1{font-size:26px;margin:0 0 4px}p.sub{color:var(--muted);margin:0 0 20px}
+.card{background:var(--card);border:1.5px solid var(--ink);border-radius:14px;box-shadow:4px 4px 0 var(--ink);padding:18px;margin:0 0 26px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.card h2{font-size:19px;margin:0}.tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.card iframe{width:100%;height:600px;border:1px solid var(--rule);border-radius:10px;background:var(--paper)}
+a.open{justify-self:start;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;text-decoration:none;background:var(--paper)}
+ul{margin:6px 0 0;padding-left:20px}li{margin:3px 0}
+details{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;background:var(--paper)}summary{cursor:pointer;font-weight:600}
+h3{font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 2px}
+p.back a{color:var(--muted)}footer{color:var(--muted);font-size:13px;margin-top:8px}
+.listen{font:inherit;color:var(--ink);background:#fff4d6;border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;cursor:pointer;margin-left:8px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}nav.toc a{color:var(--ink);font-size:13px;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;text-decoration:none;background:var(--card)}
+.path{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-weight:700;margin:4px 0}.path span{border:1.5px solid var(--ink);border-radius:8px;padding:3px 9px;background:var(--paper)}.path i{font-style:normal;color:var(--muted)}
+.path.o2 span{background:#fbd9d6}.path.co2 span{background:#dbe3f7}
+.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--paper)}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.box{border:1px solid var(--rule);border-radius:10px;padding:10px 12px;background:var(--paper)}
+.recap{border:1.5px dashed var(--ink);border-radius:10px;padding:10px 12px;background:#fff9ea}
+.btn{font:inherit;color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer;margin:3px}
+.btn.ok{background:#d9f0dc;border-color:var(--ok)}.btn.bad{background:#f7d9d4;border-color:var(--bad)}.btn[disabled]{opacity:.45;cursor:default}
+.order{display:flex;flex-wrap:wrap;gap:6px;min-height:40px;border:1px dashed var(--rule);border-radius:10px;padding:8px}
+.qrow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px;border-bottom:1px solid var(--rule);padding:6px 0}.msg{font-weight:700;min-height:1.4em}
+.model{border-left:4px solid var(--red);padding:6px 12px;background:var(--paper);border-radius:0 8px 8px 0;margin:6px 0}
+@media(max-width:560px){.card iframe{height:560px}}
+</style></head><body><main>
+<h1>Breathing and Circulation</h1>
+<p class="back"><a href="index.html">&larr; All classes</a> &middot; <a href="p5.html">Primary 5</a> &middot; <a href="human.html">P4: Digestive system</a></p>
+<p class="sub">Primary 5 Systems: the human respiratory and circulatory systems, and how they work with the digestive system. Two figures you can play with (each with a <b>Listen</b> button and a voice), quizzes, and practice questions.</p>
+<nav class="toc"><a href="#c0">Recap from P4</a><a href="#c1">1 Breathing</a><a href="#c2">2 Heart and blood</a><a href="#c3">3 Working together</a><a href="#c4">4 Quiz</a><a href="#c5">5 Practice</a></nav>
+
+<div class="recap" id="c0"><b>Recap from P4:</b> digestion breaks food into simple substances. In the <b>small intestine</b>, digested food is <b>absorbed into the bloodstream</b>. This chapter shows what the blood does next, and where it gets its oxygen. <a href="human.html">Revise the digestive system &rarr;</a></div>
+<p></p>
+
+<section class="card" id="c1">
+  <div><div class="tag">Respiratory system</div><h2>1. Breathing</h2></div>
+  <iframe src="breathe.html" title="Breathing" loading="lazy"></iframe>
+  <div><a class="open" href="breathe.html">Open full page</a><button class="listen" data-say="The main organs of the respiratory system are the nose, the windpipe and the lungs, which are full of air sacs. When we breathe in, air rich in oxygen is taken into the lungs, and oxygen passes through the air sac walls into the blood. When we breathe out, the blood has brought carbon dioxide back to the lungs, and carbon dioxide is breathed out.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3><ul><li>Main organs: <b>nose &rarr; windpipe (trachea) &rarr; lungs</b> (full of tiny <b>air sacs</b>).</li><li><b>Breathing in (inhalation):</b> air rich in <b>oxygen</b> is taken into the lungs. Oxygen passes through the <b>air sac walls into the blood</b>.</li><li><b>Breathing out (exhalation):</b> blood carries <b>carbon dioxide</b> back to the lungs. Carbon dioxide passes into the air sacs and is breathed out.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Breathe in and out and watch the lungs and diaphragm. Then look at an air sac to see oxygen going into the blood and carbon dioxide coming out.</li></ul></div>
+  <details><summary>Question: Why do the lungs have millions of tiny air sacs instead of one big bag?</summary><p>Many tiny air sacs give a very large surface area, so more oxygen can pass into the blood at the same time.</p></details>
+  <details><summary>Question: Which gas is there more of in the air we breathe out than in the air we breathe in?</summary><p>Carbon dioxide (and water vapour). There is less oxygen in the air we breathe out.</p></details>
+</section>
+
+<section class="card" id="c2">
+  <div><div class="tag">Circulatory system</div><h2>2. Heart and blood</h2></div>
+  <iframe src="blood.html" title="Heart and blood" loading="lazy"></iframe>
+  <div><a class="open" href="blood.html">Open full page</a><button class="listen" data-say="The circulatory system is the body's transport system. It is made of the heart, blood and blood vessels. The heart is a muscular pump that pushes blood all around the body. Blood carries oxygen, digested food, water and carbon dioxide. Blood rich in oxygen goes from the lungs to the heart, then to the rest of the body. Blood rich in carbon dioxide goes from the rest of the body to the heart, then to the lungs.">Read key ideas aloud</button></div>
+  <div class="wrap"><table><tr><th>Part</th><th>What it does</th></tr>
+  <tr><td><b>Heart</b></td><td>A muscular organ that acts as a <b>pump</b>, pushing blood continuously to all parts of the body.</td></tr>
+  <tr><td><b>Blood</b></td><td>Carries <b>oxygen, digested food, water</b> and <b>carbon dioxide</b> (and other wastes) around the body.</td></tr>
+  <tr><td><b>Blood vessels</b></td><td>Tubes that carry blood: <b>arteries</b> (away from the heart), <b>veins</b> (back to the heart), <b>capillaries</b> (tiny vessels inside organs).</td></tr></table></div>
+  <div><h3>Blood flow pathways</h3>
+    <div class="path o2"><b style="color:var(--red)">Rich in oxygen:</b><span>Lungs</span><i>&rarr;</i><span>Heart</span><i>&rarr;</i><span>Rest of body</span></div>
+    <div class="path co2"><b style="color:var(--blue)">Rich in carbon dioxide:</b><span>Rest of body</span><i>&rarr;</i><span>Heart</span><i>&rarr;</i><span>Lungs</span></div></div>
+  <div><h3>Try it</h3><ul><li>Pick &ldquo;oxygen-rich blood&rdquo;, then &ldquo;carbon dioxide-rich blood&rdquo; and trace each path. Name the blood vessels. Notice the yellow specks: digested food picked up at the small intestine.</li></ul></div>
+</section>
+
+<section class="card" id="c3">
+  <div><div class="tag">System interactions</div><h2>3. The systems work together</h2></div>
+  <div class="three">
+    <div class="box"><h3>Digestive</h3><p>Breaks down food. Digested food is absorbed into the <b>blood</b> in the small intestine.</p></div>
+    <div class="box"><h3>Respiratory</h3><p>Takes in <b>oxygen</b> and gets rid of <b>carbon dioxide</b>, through the air sacs in the lungs.</p></div>
+    <div class="box"><h3>Circulatory</h3><p>The <b>heart</b> pumps <b>blood</b> to carry oxygen and digested food to every cell, and carbon dioxide back to the lungs.</p></div>
+  </div>
+  <div><h3>During exercise</h3><ul><li>The muscles need more <b>energy</b>. Energy is released from digested food using oxygen (<b>respiration</b>).</li><li>So the <b>heart rate</b> and <b>breathing rate</b> both increase, to deliver more <b>oxygen and digested food</b> to the muscles faster, and to remove more carbon dioxide.</li><li>Try it in figure 2: change Activity to walking, then running. The heart rate goes 70 &rarr; 100 &rarr; 150 per minute.</li></ul></div>
+  <details><summary>Question: Why does your heart beat faster when you run?</summary><p class="model">When you run, your muscles need more energy. The heart beats faster to pump blood faster, delivering more oxygen and digested food to the muscles so more energy can be released.</p></details>
+</section>
+
+<section class="card" id="c4">
+  <div><div class="tag">Check yourself</div><h2>4. Quick quiz</h2></div>
+  <div><h3>Put the path of air in order</h3><div id="pool1"></div><div class="order" id="ord1"></div><div class="msg" id="m1"></div></div>
+  <div><h3>Oxygen-rich or carbon dioxide-rich?</h3><div id="rich"></div><div class="msg" id="richmsg"></div></div>
+  <div><h3>Which part does this?</h3><div id="job"></div><div class="msg" id="jobmsg"></div></div>
+  <div><h3>True or false?</h3><div id="tf"></div><div class="msg" id="tfmsg"></div></div>
+</section>
+
+<section class="card" id="c5">
+  <div><div class="tag">Exam skills</div><h2>5. Practice questions</h2></div>
+  <details><summary>Practice 1: Describe how oxygen from the air reaches the muscles in your leg.</summary><p class="model">Air rich in oxygen is breathed in through the nose and windpipe into the air sacs in the lungs. Oxygen passes through the air sac walls into the blood. The blood goes to the heart, which pumps it through blood vessels to the leg muscles.</p></details>
+  <details><summary>Practice 2: How does digested food reach the muscles?</summary><p class="model">Digested food is absorbed into the blood in the small intestine. The blood carries it to the heart, which pumps it to the muscles.</p></details>
+  <details><summary>Practice 3: After a race, Ali breathes faster for some time. Why?</summary><p class="model">His muscles needed a lot of energy and produced more carbon dioxide. Breathing faster takes in more oxygen and removes more carbon dioxide from the body.</p></details>
+  <details><summary>Practice 4: Why is the heart described as a pump?</summary><p class="model">It is a muscular organ that contracts to push blood continuously through the blood vessels to all parts of the body.</p></details>
+  <details><summary>Practice 5: Blood going to the lungs is rich in carbon dioxide. Where did the carbon dioxide come from?</summary><p class="model">From the cells in the rest of the body, which produce carbon dioxide when they release energy from food. The blood collects it and brings it back to the heart, which pumps it to the lungs.</p></details>
+</section>
+
+<footer>Figures drawn with the open-source Colorfigures skill (MIT, April Zhu). Voice uses your browser&rsquo;s built-in speech; if it is silent, check that your device has an English voice installed.</footer>
+<script>
+const speak = t => { if (typeof speechSynthesis === 'undefined') return; speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t); u.lang = 'en-GB'; u.rate = .92; speechSynthesis.speak(u); };
+document.querySelectorAll('.listen').forEach(b => b.onclick = () => speak(b.dataset.say));
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+function orderQuiz(poolId, ordId, msgId, items, done){
+  const pool = document.getElementById(poolId), order = document.getElementById(ordId), msg = document.getElementById(msgId); let n = 0;
+  [...items].sort(() => Math.random() - .5).forEach(o => { const b = el('button', 'btn', o); pool.appendChild(b);
+    b.onclick = () => { if (b.disabled) return;
+      if (o === items[n]){ b.disabled = true; b.classList.add('ok'); order.appendChild(el('span', 'btn ok', (n + 1) + '. ' + o)); n++; msg.textContent = '';
+        if (n === items.length){ msg.textContent = done; msg.style.color = 'var(--ok)'; speak(done); } }
+      else { b.classList.add('bad'); setTimeout(() => b.classList.remove('bad'), 600); msg.textContent = o + ' is not next.'; msg.style.color = 'var(--bad)'; } }; });
+}
+orderQuiz('pool1', 'ord1', 'm1', ['Nose', 'Windpipe', 'Lungs', 'Air sacs', 'Blood'], 'Well done! Oxygen goes from the nose, down the windpipe, into the air sacs in the lungs, and into the blood.');
+function choiceQuiz(id, msgId, items, opts){
+  const box = document.getElementById(id), msg = document.getElementById(msgId); let right = 0, done = 0;
+  items.forEach(([q, ans, why]) => { const row = el('div', 'qrow'); row.appendChild(el('span', '', q)); const bs = el('span');
+    opts.forEach(o => { const b = el('button', 'btn', o); bs.appendChild(b);
+      b.onclick = () => { if (row.dataset.done) return; row.dataset.done = 1; done++; const ok = o === ans; if (ok) right++;
+        b.classList.add(ok ? 'ok' : 'bad'); if (!ok) [...bs.children].find(x => x.textContent === ans).classList.add('ok');
+        if (why) row.appendChild(el('div', '', (ok ? 'Correct. ' : 'Not quite. ') + why)).style.cssText = 'flex-basis:100%;color:var(--muted);font-size:14px';
+        if (done === items.length){ msg.textContent = 'Score: ' + right + ' / ' + items.length; msg.style.color = right === items.length ? 'var(--ok)' : 'var(--ink)'; } }; });
+    row.appendChild(bs); box.appendChild(row); });
+}
+choiceQuiz('rich', 'richmsg', [
+  ['Blood going from the lungs to the heart', 'Oxygen-rich', ''], ['Blood going from the heart to the body', 'Oxygen-rich', ''],
+  ['Blood coming back from the body to the heart', 'CO2-rich', ''], ['Blood going from the heart to the lungs', 'CO2-rich', 'The carbon dioxide will be breathed out.']], ['Oxygen-rich', 'CO2-rich']);
+choiceQuiz('job', 'jobmsg', [
+  ['Pumps blood to all parts of the body', 'Heart', ''], ['Where oxygen passes into the blood', 'Air sacs', ''],
+  ['Carries oxygen, digested food and carbon dioxide', 'Blood', ''], ['Tubes that carry blood', 'Blood vessels', ''],
+  ['Carries air from the nose to the lungs', 'Windpipe', '']], ['Heart', 'Air sacs', 'Blood', 'Blood vessels', 'Windpipe']);
+choiceQuiz('tf', 'tfmsg', [
+  ['Oxygen passes from the air sacs into the blood.', 'True', ''],
+  ['The heart is a muscular pump.', 'True', ''],
+  ['Blood only carries oxygen.', 'False', 'It also carries digested food, water and carbon dioxide.'],
+  ['During exercise, heart rate goes down to save energy.', 'False', 'Heart rate and breathing rate both go up.'],
+  ['Digested food enters the blood in the small intestine.', 'True', 'That is how the digestive and circulatory systems are linked.']], ['True', 'False']);
+</script>
+</main></body></html>

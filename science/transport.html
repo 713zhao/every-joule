@@ -1,0 +1,126 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Plant Transport System</title>
+<style>
+:root{--paper:#f2efe7;--ink:#231e16;--muted:#6f685b;--rule:#ddd6c8;--card:#fbf8f0;--ok:#2f8a4a;--bad:#c0392b;--red:#d93a3a;--blue:#3e9ee0;--orange:#f08c2b}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;padding:28px 16px 48px}
+main{max-width:860px;margin:0 auto}h1{font-size:26px;margin:0 0 4px}p.sub{color:var(--muted);margin:0 0 20px}
+.card{background:var(--card);border:1.5px solid var(--ink);border-radius:14px;box-shadow:4px 4px 0 var(--ink);padding:18px;margin:0 0 26px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.card h2{font-size:19px;margin:0}.tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.card iframe{width:100%;height:600px;border:1px solid var(--rule);border-radius:10px;background:var(--paper)}
+a.open{justify-self:start;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;text-decoration:none;background:var(--paper)}
+ul{margin:6px 0 0;padding-left:20px}li{margin:3px 0}
+details{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;background:var(--paper)}summary{cursor:pointer;font-weight:600}
+h3{font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 2px}
+p.back a{color:var(--muted)}footer{color:var(--muted);font-size:13px;margin-top:8px}
+.listen{font:inherit;color:var(--ink);background:#fff4d6;border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;cursor:pointer;margin-left:8px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}nav.toc a{color:var(--ink);font-size:13px;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;text-decoration:none;background:var(--card)}
+.path{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-weight:700;margin:4px 0}.path span{border:1.5px solid var(--ink);border-radius:8px;padding:3px 9px;background:var(--paper)}.path i{font-style:normal;color:var(--muted)}
+.path.w span{background:#dcecf9}.path.fd span{background:#fde6cf}
+.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--paper)}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.box{border:1px solid var(--rule);border-radius:10px;padding:10px 12px;background:var(--paper)}
+.recap{border:1.5px dashed var(--ink);border-radius:10px;padding:10px 12px;background:#fff9ea}
+.btn{font:inherit;color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer;margin:3px}
+.btn.ok{background:#d9f0dc;border-color:var(--ok)}.btn.bad{background:#f7d9d4;border-color:var(--bad)}.btn[disabled]{opacity:.45;cursor:default}
+.order{display:flex;flex-wrap:wrap;gap:6px;min-height:40px;border:1px dashed var(--rule);border-radius:10px;padding:8px}
+.qrow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px;border-bottom:1px solid var(--rule);padding:6px 0}.msg{font-weight:700;min-height:1.4em}
+.model{border-left:4px solid #4fae4c;padding:6px 12px;background:var(--paper);border-radius:0 8px 8px 0;margin:6px 0}
+@media(max-width:560px){.card iframe{height:560px}}
+</style></head><body><main>
+<h1>Plant Transport System</h1>
+<p class="back"><a href="index.html">&larr; All classes</a> &middot; <a href="p5.html">Primary 5</a> &middot; <a href="plantsys.html">P4: Plant system</a> &middot; <a href="circ.html">P5: Breathing and circulation</a></p>
+<p class="sub">Primary 5 Systems: how water, mineral salts and food move through a plant, how leaves lose water, and how a plant&rsquo;s transport system compares with ours. Two new figures (each with a <b>Listen</b> button and a voice), quizzes and practice questions.</p>
+<nav class="toc"><a href="#c0">Recap from P4</a><a href="#c1">1 Water and food tubes</a><a href="#c2">2 Transpiration</a><a href="#c3">3 Human vs plant</a><a href="#c4">4 Quiz</a><a href="#c5">5 Practice</a></nav>
+
+<div class="recap" id="c0"><b>Recap from P4:</b> roots absorb water and mineral salts; the stem carries them up; leaves make food. In P4 you saw water climb a celery stalk and did the ringing experiment. This chapter looks <b>inside</b> the tubes and at what happens to the water at the top. <a href="plantsys.html">Revise the P4 plant system &rarr;</a></div>
+<p></p>
+
+<section class="card" id="c1">
+  <div><div class="tag">Vascular bundles</div><h2>1. Water tubes and food tubes</h2></div>
+  <div><button class="listen" data-say="Plants have two kinds of transport tubes that run all the way from the roots to the leaves. The water-carrying tubes carry water and mineral salts upward only, from the roots, up the stem, to the leaves and flowers. The food-carrying tubes carry food, which is sugar made in the leaves, in all directions, to every part of the plant. In the stem, the two kinds of tubes are grouped together in bundles.">Read key ideas aloud</button></div>
+  <div class="wrap"><table><tr><th>Transport tube</th><th>Direction</th><th>Carries</th><th>From &rarr; to</th></tr>
+  <tr><td><b style="color:var(--blue)">Water-carrying tubes</b> <i>(xylem)</i></td><td><b>UPWARD ONLY</b></td><td>Water and mineral salts</td><td>Roots &rarr; stem &rarr; leaves and flowers</td></tr>
+  <tr><td><b style="color:var(--orange)">Food-carrying tubes</b> <i>(phloem)</i></td><td><b>ALL DIRECTIONS</b></td><td>Food (sugar)</td><td>Leaves &rarr; all parts of the plant</td></tr></table></div>
+  <div><h3>Pathways</h3>
+    <div class="path w"><b style="color:var(--blue)">Water:</b><span>Soil</span><i>&rarr;</i><span>Root hairs</span><i>&rarr;</i><span>Roots</span><i>&rarr;</i><span>Stem</span><i>&rarr;</i><span>Leaves</span><i>&rarr;</i><span>Air (as vapour)</span></div>
+    <div class="path fd"><b style="color:var(--orange)">Food:</b><span>Leaves</span><i>&rarr;</i><span>Stem</span><i>&rarr;</i><span>Roots, flowers, fruits, growing tips</span></div></div>
+  <div><h3>See it in the P4 figures</h3><ul><li><a href="plant.html">Celery in red dye</a>: the red water climbs only the water-carrying tubes. Look inside the stem.</li><li><a href="ring.html">The ringing experiment</a>: cut away the outer ring with the food-carrying tubes and food piles up above the cut; the leaves stay green because the water-carrying tubes are still there.</li></ul></div>
+  <details><summary>Question: A ring of bark is removed from a tree. Why does the part above the ring swell, but the leaves stay green?</summary><p class="model">The food-carrying tubes in the outer layer are removed, so food from the leaves cannot travel down past the ring and collects above it. The water-carrying tubes inside are not cut, so water still reaches the leaves.</p></details>
+</section>
+
+<section class="card" id="c2">
+  <div><div class="tag">Transpiration and stomata</div><h2>2. Water lost from the leaves</h2></div>
+  <iframe src="stomata.html" title="Transpiration: water lost from leaves" loading="lazy"></iframe>
+  <div><a class="open" href="stomata.html">Open full page</a><button class="listen" data-say="Stomata are tiny openings, mainly on the underside of leaves. Gases pass in and out through them, and water vapour escapes through them. The loss of water vapour from the leaves is called transpiration. More water is lost when it is warm, sunny or windy. During hot, dry conditions, the stomata close to prevent too much water loss.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3><ul><li><b>Stomata</b> are tiny openings, <b>mainly on the underside</b> of leaves.</li><li>They are used for <b>gaseous exchange</b> (carbon dioxide in, oxygen out) and they let <b>water vapour</b> out.</li><li>Losing water vapour from the leaves is called <b>transpiration</b>. It helps draw water up the stem from the roots.</li><li>Warm, sunny or windy weather &rarr; <b>more</b> water lost.</li><li>Very <b>hot and dry</b> &rarr; the stomata <b>close</b> to prevent too much water loss (and wilting).</li></ul></div>
+  <div><h3>How the experiment works</h3><ul><li>The <b>oil layer</b> stops water evaporating from the cylinder, so any drop in water level is water taken up by the plant.</li><li><b>Grease</b> on the undersides blocks the stomata: much less water is lost, which shows most stomata are on the underside.</li><li>A <b>plastic bag</b> over the leaves collects droplets: the water vapour from the leaves condenses on the cooler bag.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Wait 1 hour in each kind of weather and compare how much the level drops. Then choose &ldquo;very hot and dry&rdquo; and look under a leaf. Grease the undersides and wait again.</li></ul></div>
+  <details><summary>Question: Why is a layer of oil added on top of the water?</summary><p class="model">To prevent water from evaporating from the surface of the water, so that the drop in water level is only due to water taken in by the plant.</p></details>
+</section>
+
+<section class="card" id="c3">
+  <div><div class="tag">Comparison</div><h2>3. Human vs plant transport</h2></div>
+  <iframe src="pump.html" title="Heart or no heart?" loading="lazy"></iframe>
+  <div><a class="open" href="pump.html">Open full page</a><button class="listen" data-say="Humans have a heart that pumps blood through blood vessels in a continuous loop. Plants have no heart. Water is drawn up the water-carrying tubes by absorption at the roots and by transpiration at the leaves, so water flows one way, upward. Food moves in all directions in the food-carrying tubes.">Read key ideas aloud</button></div>
+  <div class="wrap"><table><tr><th>Feature</th><th>Human circulatory system</th><th>Plant transport system</th></tr>
+  <tr><td><b>Pumping organ</b></td><td><b>Heart</b> actively pumps blood</td><td><b>No heart</b>: driven by absorption at the roots and transpiration at the leaves</td></tr>
+  <tr><td><b>Tubes</b></td><td>Blood vessels carrying blood</td><td>Water-carrying and food-carrying tubes</td></tr>
+  <tr><td><b>Direction</b></td><td>A <b>continuous loop</b>: the same blood goes round and round</td><td><b>One way</b> for water (upward, then out as vapour); <b>all directions</b> for food</td></tr>
+  <tr><td><b>What is carried</b></td><td>Oxygen, digested food, water, carbon dioxide</td><td>Water and mineral salts; food (sugar)</td></tr></table></div>
+  <div><h3>Try it</h3><ul><li>Press <b>Follow one of each</b>: the blood cell keeps coming back to the heart, but each water drop escapes from a leaf and never returns. Make the person run, then make the day very hot and dry, and compare what speeds up and what slows down.</li></ul></div>
+  <a class="open" href="circ.html">Revise the human circulatory system &rarr;</a>
+</section>
+
+<section class="card" id="c4">
+  <div><div class="tag">Check yourself</div><h2>4. Quick quiz</h2></div>
+  <div><h3>Put the path of water in order</h3><div id="pool1"></div><div class="order" id="ord1"></div><div class="msg" id="m1"></div></div>
+  <div><h3>Water tubes or food tubes?</h3><div id="tube"></div><div class="msg" id="tubemsg"></div></div>
+  <div><h3>More or less water lost?</h3><div id="more"></div><div class="msg" id="moremsg"></div></div>
+  <div><h3>Human, plant or both?</h3><div id="hp"></div><div class="msg" id="hpmsg"></div></div>
+</section>
+
+<section class="card" id="c5">
+  <div><div class="tag">Exam skills</div><h2>5. Practice questions</h2></div>
+  <details><summary>Practice 1: Describe how water in the soil reaches the leaves of a plant.</summary><p class="model">Water is absorbed by the root hairs and roots. It travels up the water-carrying tubes in the stem to the leaves.</p></details>
+  <details><summary>Practice 2: Two identical plants are left in the sun. Plant A is in a windy place; plant B is in a still place. Which loses more water? Explain.</summary><p class="model">Plant A. The wind carries water vapour away from the leaves, so water evaporates and escapes through the stomata faster.</p></details>
+  <details><summary>Practice 3: Grease is applied to the underside of the leaves of plant X and to the upper side of the leaves of plant Y. Which plant loses less water? Why?</summary><p class="model">Plant X. Most stomata are on the underside of the leaves; grease blocks them, so less water vapour can escape.</p></details>
+  <details><summary>Practice 4: On a very hot, dry afternoon, the stomata of a plant close. How does this help the plant?</summary><p class="model">Closing the stomata reduces water loss through transpiration, so the plant does not lose too much water and wilt.</p></details>
+  <details><summary>Practice 5: Give one way the transport system of a plant is different from the circulatory system of a human.</summary><p class="model">A human has a heart that pumps blood in a continuous loop, but a plant has no heart: water moves only upward, drawn by absorption and transpiration, and is lost from the leaves.</p></details>
+</section>
+
+<footer>Figures drawn with the open-source Colorfigures skill (MIT, April Zhu). Voice uses your browser&rsquo;s built-in speech; if it is silent, check that your device has an English voice installed.</footer>
+<script>
+const speak = t => { if (typeof speechSynthesis === 'undefined') return; speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t); u.lang = 'en-GB'; u.rate = .92; speechSynthesis.speak(u); };
+document.querySelectorAll('.listen').forEach(b => b.onclick = () => speak(b.dataset.say));
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+function orderQuiz(poolId, ordId, msgId, items, done){
+  const pool = document.getElementById(poolId), order = document.getElementById(ordId), msg = document.getElementById(msgId); let n = 0;
+  [...items].sort(() => Math.random() - .5).forEach(o => { const b = el('button', 'btn', o); pool.appendChild(b);
+    b.onclick = () => { if (b.disabled) return;
+      if (o === items[n]){ b.disabled = true; b.classList.add('ok'); order.appendChild(el('span', 'btn ok', (n + 1) + '. ' + o)); n++; msg.textContent = '';
+        if (n === items.length){ msg.textContent = done; msg.style.color = 'var(--ok)'; speak(done); } }
+      else { b.classList.add('bad'); setTimeout(() => b.classList.remove('bad'), 600); msg.textContent = o + ' is not next.'; msg.style.color = 'var(--bad)'; } }; });
+}
+orderQuiz('pool1', 'ord1', 'm1', ['Soil', 'Root hairs', 'Water-carrying tubes in the stem', 'Leaves', 'Stomata', 'Air'], 'Well done! Water goes from the soil into the root hairs, up the water-carrying tubes to the leaves, and escapes through the stomata as water vapour.');
+function choiceQuiz(id, msgId, items, opts){
+  const box = document.getElementById(id), msg = document.getElementById(msgId); let right = 0, done = 0;
+  items.forEach(([q, ans, why]) => { const row = el('div', 'qrow'); row.appendChild(el('span', '', q)); const bs = el('span');
+    opts.forEach(o => { const b = el('button', 'btn', o); bs.appendChild(b);
+      b.onclick = () => { if (row.dataset.done) return; row.dataset.done = 1; done++; const ok = o === ans; if (ok) right++;
+        b.classList.add(ok ? 'ok' : 'bad'); if (!ok) [...bs.children].find(x => x.textContent === ans).classList.add('ok');
+        if (why) row.appendChild(el('div', '', (ok ? 'Correct. ' : 'Not quite. ') + why)).style.cssText = 'flex-basis:100%;color:var(--muted);font-size:14px';
+        if (done === items.length){ msg.textContent = 'Score: ' + right + ' / ' + items.length; msg.style.color = right === items.length ? 'var(--ok)' : 'var(--ink)'; } }; });
+    row.appendChild(bs); box.appendChild(row); });
+}
+choiceQuiz('tube', 'tubemsg', [
+  ['Carries water and mineral salts', 'Water tubes', ''], ['Carries sugar made in the leaves', 'Food tubes', ''],
+  ['Moves its contents upward only', 'Water tubes', ''], ['Moves its contents in all directions', 'Food tubes', 'Food goes up to flowers and fruits and down to the roots.'],
+  ['Cut in the ringing experiment, making the stem swell', 'Food tubes', 'They are in the outer layer of the stem.']], ['Water tubes', 'Food tubes']);
+choiceQuiz('more', 'moremsg', [
+  ['A windy day instead of a still day', 'More', ''], ['Grease on the undersides of the leaves', 'Less', 'It blocks most of the stomata.'],
+  ['A warm, sunny day instead of a cool, cloudy one', 'More', ''], ['Stomata close on a very hot, dry day', 'Less', 'This stops the plant wilting.'],
+  ['Half the leaves are removed', 'Less', 'Fewer leaves means fewer stomata.']], ['More', 'Less']);
+choiceQuiz('hp', 'hpmsg', [
+  ['Has a pump (a heart)', 'Human', ''], ['Has a transport system', 'Both', ''], ['Its fluid flows in a continuous loop', 'Human', ''],
+  ['Water flows one way and is lost from the leaves', 'Plant', ''], ['Carries food to all parts', 'Both', 'Blood carries digested food; food-carrying tubes carry sugar.']], ['Human', 'Plant', 'Both']);
+</script>
+</main></body></html>

@@ -1,0 +1,125 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heat: play and learn</title>
+<style>
+:root{--paper:#f2efe7;--ink:#231e16;--muted:#6f685b;--rule:#ddd6c8;--card:#fbf8f0}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;padding:28px 16px 48px}
+main{max-width:860px;margin:0 auto}h1{font-size:26px;margin:0 0 4px}p.sub{color:var(--muted);margin:0 0 20px}
+.card{background:var(--card);border:1.5px solid var(--ink);border-radius:14px;box-shadow:4px 4px 0 var(--ink);padding:18px;margin:0 0 26px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.card h2{font-size:19px;margin:0}.tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.card iframe{width:100%;height:560px;border:1px solid var(--rule);border-radius:10px;background:var(--paper)}
+a.open{justify-self:start;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;text-decoration:none;background:var(--paper)}
+a.open:hover{background:#0000000d}ul,ol{margin:6px 0 0;padding-left:20px}li{margin:3px 0}
+details{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;background:var(--paper)}summary{cursor:pointer;font-weight:600}
+h3{font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 2px}
+p.back a{color:var(--muted)}footer{color:var(--muted);font-size:13px;margin-top:8px}
+.listen{justify-self:start;font:inherit;color:var(--ink);background:#fff4d6;border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;cursor:pointer;margin-left:8px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}nav.toc a{color:var(--ink);font-size:13px;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;text-decoration:none;background:var(--card)}
+.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--paper)}
+.steps{counter-reset:s;list-style:none;padding:0}.steps li{counter-increment:s;padding:8px 12px 8px 44px;position:relative;border:1px solid var(--rule);border-radius:8px;margin:6px 0;background:var(--paper)}
+.steps li::before{content:counter(s);position:absolute;left:12px;top:8px;width:22px;height:22px;border-radius:50%;border:1.5px solid var(--ink);text-align:center;line-height:20px;font-weight:700;background:#fff4d6}
+.model{border-left:4px solid #f0702b;padding:6px 12px;background:var(--paper);border-radius:0 8px 8px 0}.model b.c{color:#b5461a}
+@media(max-width:560px){.card iframe{height:520px}}
+</style></head><body><main>
+<h1>Heat: play and learn</h1>
+<p class="back"><a href="index.html">&larr; All classes</a> &middot; <a href="p4.html">Primary 4</a></p>
+<p class="sub">Primary 4 Energy: Heat. Seven figures you can play with, each with a <b>Listen</b> button and a voice that explains what happens (switch Voice off under the figure). The last section shows how to write full-mark answers.</p>
+<nav class="toc"><a href="#c1">1 Heat vs temperature</a><a href="#c2">2 Heat flow</a><a href="#c3">3 Change of state</a><a href="#c4">4 Expansion</a><a href="#c5">5 Railway gaps</a><a href="#c6">6 Jar lid</a><a href="#c7">7 Conductors</a><a href="#c8">8 Exam answers</a></nav>
+
+<section class="card" id="c1">
+  <div><div class="tag">Heat vs temperature</div><h2>1. Heat and temperature</h2></div>
+  <iframe src="temp.html" title="Heat and temperature" loading="lazy"></iframe>
+  <div><a class="open" href="temp.html">Open full page</a><button class="listen" data-say="Heat and temperature. Temperature is how hot or cold something is. It is measured in degrees Celsius with a thermometer. Heat is a form of energy that moves from one object to another. A big basin and a small mug of water can have the same temperature, fifty degrees, but the basin holds much more heat because it has much more water.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3><ul><li><b>Temperature</b> is how hot or cold something is. It is measured in <b>degrees Celsius (&deg;C)</b> with a <b>thermometer</b>.</li><li><b>Heat</b> is a form of <b>energy</b>. It can move from one object to another.</li><li>Same temperature does not mean same heat. A 5-litre basin and a 200 mL mug, both at 50&nbsp;&deg;C, have the same temperature, but the basin holds about 25 times more heat because it has much more water.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Drop the same ice cube into each. The mug falls to about 38&nbsp;&deg;C; the basin stays at about 49&nbsp;&deg;C.</li></ul></div>
+  <details><summary>Question: Why did the mug's temperature drop more than the basin's?</summary><p>The ice gained the same amount of heat from each container. The mug has much less water, so it holds much less heat, and losing that heat made its temperature fall a lot more.</p></details>
+  <details><summary>Question: What instrument measures temperature, and in what unit?</summary><p>A thermometer, in degrees Celsius (&deg;C).</p></details>
+</section>
+
+<section class="card" id="c2">
+  <div><div class="tag">Direction of heat flow</div><h2>2. Heat flows from hot to cold</h2></div>
+  <iframe src="flow.html" title="Heat flows from hot to cold" loading="lazy"></iframe>
+  <div><a class="open" href="flow.html">Open full page</a><button class="listen" data-say="Heat flows from hot to cold. Heat always flows from a hotter object to a cooler object. The hotter object loses heat, and its temperature falls. The cooler object gains heat, and its temperature rises. Heat keeps flowing until both are at the same temperature.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3><ul><li>The golden rule: heat always flows from a <b>hotter</b> place or object to a <b>cooler</b> one.</li><li>The hotter object <b>loses heat</b>, so its temperature <b>falls</b>. The cooler object <b>gains heat</b>, so its temperature <b>rises</b>.</li><li>Heat keeps flowing until both are at the <b>same temperature</b>. Then it stops.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Pick &ldquo;Hot can in cold water&rdquo; and press Start. Then try &ldquo;Cold can in hot water&rdquo;: the arrows turn round.</li></ul></div>
+  <details><summary>Question: A cold can drink is left on a table. Why does it become warm?</summary><p>The surrounding air is hotter than the can. The can gains heat from the surrounding air, so its temperature rises until it reaches the temperature of the air.</p></details>
+  <details><summary>Question: Does &ldquo;cold&rdquo; flow from ice into your hand?</summary><p>No. Heat flows from your warmer hand to the ice. Your hand loses heat, so it feels cold.</p></details>
+</section>
+
+<section class="card" id="c3">
+  <div><div class="tag">Effects of heat · change of state</div><h2>3. Change of state</h2></div>
+  <iframe src="water.html" title="Water: melting, boiling, condensing" loading="lazy"></iframe>
+  <div><a class="open" href="water.html">Open full page</a><button class="listen" data-say="Change of state. Gaining or losing heat can change the state of matter. Ice gains heat and melts into water. Water gains heat and boils into steam at one hundred degrees. Water vapour loses heat to a cold surface and condenses into water droplets. Water loses heat and freezes into ice at zero degrees.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3><ul><li><b>Gaining heat:</b> melting (solid &rarr; liquid, ice melts at 0&nbsp;&deg;C), boiling (liquid &rarr; gas, water boils at 100&nbsp;&deg;C), evaporation (liquid &rarr; gas at any temperature).</li><li><b>Losing heat:</b> freezing (liquid &rarr; solid, water freezes at 0&nbsp;&deg;C), condensation (gas &rarr; liquid).</li><li>Droplets on a cold glass: warm water vapour in the air <b>loses heat</b> to the cold glass and <b>condenses</b>.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Heat the pot, then wait. Watch the ice melt, the water boil, and droplets form on the cold glass.</li></ul></div>
+  <details><summary>Question: Where do the droplets on the outside of the iced glass come from?</summary><p>From water vapour in the surrounding air. The water vapour touches the cold glass, loses heat to it and condenses into water droplets. The water does not come through the glass.</p></details>
+</section>
+
+<section class="card" id="c4">
+  <div><div class="tag">Effects of heat · expansion and contraction</div><h2>4. Expansion and contraction</h2></div>
+  <iframe src="expand.html" title="Expansion and contraction" loading="lazy"></iframe>
+  <div><a class="open" href="expand.html">Open full page</a><button class="listen" data-say="Expansion and contraction. When things gain heat, they expand: their volume gets bigger. When they lose heat, they contract: their volume gets smaller. Solids, liquids and gases all do this, and gases expand the most. A thermometer works this way. The liquid inside gains heat, expands and rises up the tube.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3><ul><li><b>Gain heat &rarr; expand</b> (volume increases). <b>Lose heat &rarr; contract</b> (volume decreases).</li><li>Solids, liquids and gases all expand and contract; <b>air expands the most</b>.</li><li><b>Thermometers:</b> the liquid inside (alcohol or mercury) gains heat, expands and rises up the narrow tube.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Put the flasks in the hot water bath, then the ice water bath. Watch the coloured water in the tube and the balloon.</li></ul></div>
+  <details><summary>Question: Why did the balloon get bigger in the hot water bath?</summary><p>The air in the flask gained heat from the hot water and expanded. The expanding air pushed into the balloon and inflated it.</p></details>
+  <details><summary>Question: A dented ping-pong ball is put in hot water and the dent pops out. Explain.</summary><p>The air inside the ball gains heat from the hot water and expands, pushing the dent outwards.</p></details>
+</section>
+
+<section class="card" id="c5">
+  <div><div class="tag">Everyday applications</div><h2>5. Why railway tracks have gaps</h2></div>
+  <iframe src="rails.html" title="Why railway tracks have gaps" loading="lazy"></iframe>
+  <div><a class="open" href="rails.html">Open full page</a><button class="listen" data-say="Why railway tracks have gaps. On a hot day, steel rails gain heat from the Sun and expand. Small gaps are left between the rails so they have room to expand. Without gaps, the rails push against each other and buckle. Bridges have expansion joints for the same reason.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3><ul><li>On a hot day, the rails <b>gain heat</b> and <b>expand</b>. The gaps give them room to expand.</li><li>Without gaps, the rails push against each other and <b>buckle</b> (bend), and a train could come off the track.</li><li><b>Bridges</b> have <b>expansion joints</b> for the same reason. Electrical cables are hung loosely so they do not snap when they contract on cold nights.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Make it a hot afternoon and watch the gap shrink. Then choose &ldquo;without gaps&rdquo; and make it hot again.</li></ul></div>
+  <details><summary>Question: Why are the gaps smaller in the afternoon than at night?</summary><p>In the afternoon the rails gain heat from the surroundings and expand, so they take up more of the gap. At night they lose heat and contract, so the gaps become bigger.</p></details>
+</section>
+
+<section class="card" id="c6">
+  <div><div class="tag">Everyday applications</div><h2>6. Opening a tight jar lid</h2></div>
+  <iframe src="jar.html" title="Opening a tight jar lid" loading="lazy"></iframe>
+  <div><a class="open" href="jar.html">Open full page</a><button class="listen" data-say="Opening a tight jar lid. Pour hot water over a tight metal lid. The metal lid gains heat and expands more than the glass jar, so the lid becomes loose and is easier to open. Thick glass can crack when boiling water is poured in, because the inside expands faster than the outside.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3><ul><li>The metal lid <b>gains heat</b> from the hot water and <b>expands more than the glass</b>, so it loosens.</li><li><b>Uneven expansion:</b> pour boiling water suddenly into a thick glass and it may <b>crack</b>. The inner layer gains heat and expands faster than the outer layer.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Try the lid first (it is stuck). Pour hot water over it, then try again. Let it cool and it is tight again.</li></ul></div>
+  <details><summary>Question: Why must the hot water go over the lid and not over the whole jar?</summary><p>The lid must expand more than the glass. If the glass jar also gains heat and expands, the lid stays tight.</p></details>
+</section>
+
+<section class="card" id="c7">
+  <div><div class="tag">Good and poor conductors</div><h2>7. Conductors and insulators</h2></div>
+  <iframe src="heat.html" title="Heat: conductors and insulators" loading="lazy"></iframe>
+  <div><a class="open" href="heat.html">Open full page</a><button class="listen" data-say="Conductors and insulators. Good conductors of heat let heat pass through them quickly. Metals like copper, aluminium, iron and steel are good conductors, so we use them for pots and pans. Poor conductors, also called insulators, do not let heat pass through easily. Wood, plastic, rubber, foam, wool and air are poor conductors, so we use them for pot handles, oven gloves and winter jackets.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3>
+    <div class="wrap"><table><tr><th>Type</th><th>What it does</th><th>Examples</th><th>Uses</th></tr>
+    <tr><td><b>Good conductors</b></td><td>Let heat pass through <b>quickly</b></td><td>Metals: copper, aluminium, iron, steel</td><td>Cooking pots and pans, the base of an iron</td></tr>
+    <tr><td><b>Poor conductors</b> (insulators)</td><td>Do not let heat pass through easily</td><td>Wood, plastic, rubber, foam, wool, <b>air</b></td><td>Pot handles, oven gloves, winter jackets, air trapped in double-glazed windows</td></tr></table></div></div>
+  <div><h3>Try it</h3><ul><li>Pour hot water, then wait. The bead on the metal rod drops first, then plastic. Wood never gets hot enough.</li></ul></div>
+  <details><summary>Question: Why does a winter jacket with a thick layer of trapped air keep you warm?</summary><p>Air is a poor conductor of heat. The trapped air reduces the heat lost from your body to the cold surroundings.</p></details>
+  <details><summary>Question: Why is a frying pan made of metal but its handle made of plastic?</summary><p>Metal is a good conductor, so heat passes quickly from the fire to the food. Plastic is a poor conductor, so heat does not pass easily to your hand.</p></details>
+</section>
+
+<section class="card" id="c8">
+  <div><div class="tag">Exam skills</div><h2>8. Writing full-mark answers: cause and effect</h2></div>
+  <div><button class="listen" style="margin-left:0" data-say="Writing full-mark answers. Use three steps. Step one: say where the heat went. The object gained heat from, or lost heat to, something. Step two: say what happened to the object. It expanded, contracted, or its temperature changed. Step three: link it back to what the question asks about.">Read the steps aloud</button></div>
+  <ol class="steps">
+    <li><b>Heat transfer.</b> Say whether the object <i>gained heat from</i> or <i>lost heat to</i> something. Name both objects.</li>
+    <li><b>Effect.</b> Say what happened to the object: it <i>expanded</i>, <i>contracted</i>, changed state, or its temperature rose or fell.</li>
+    <li><b>Link.</b> Connect it to the observation in the question.</li>
+  </ol>
+  <div><h3>Worked example</h3>
+  <p><b>Q:</b> On a hot afternoon, a metal rod could not fit into its bracket, although it fitted in the morning. Explain why.</p>
+  <p class="model"><b class="c">(1)</b> The metal rod gained heat from the hot surroundings. <b class="c">(2)</b> It expanded. <b class="c">(3)</b> The rod became too long to fit into the bracket.</p>
+  <p>A weak answer says only &ldquo;the rod got hot&rdquo;. It loses marks because it does not say the rod <i>gained heat from</i> the surroundings or that it <i>expanded</i>.</p></div>
+  <div><h3>Words to use, and words to avoid</h3><ul><li>Use: <i>gained heat from</i>, <i>lost heat to</i>, <i>expanded</i>, <i>contracted</i>, <i>good / poor conductor of heat</i>.</li><li>Avoid: &ldquo;the cold went into&rdquo; (cold does not flow), &ldquo;it absorbed coldness&rdquo;, or saying an object &ldquo;has heat&rdquo; without saying where it came from.</li></ul></div>
+  <details><summary>Practice 1: Why is it easier to open a tight metal lid after pouring hot water over it?</summary><p class="model"><b class="c">(1)</b> The metal lid gained heat from the hot water. <b class="c">(2)</b> It expanded more than the glass jar. <b class="c">(3)</b> The lid became loose, so it was easier to open.</p></details>
+  <details><summary>Practice 2: The liquid in a thermometer rises when it is put under a child's tongue. Explain.</summary><p class="model"><b class="c">(1)</b> The liquid in the thermometer gained heat from the child's body. <b class="c">(2)</b> It expanded. <b class="c">(3)</b> It moved up the narrow tube, so the level rose.</p></details>
+  <details><summary>Practice 3: A balloon tied over a flask in an ice bath goes limp. Explain.</summary><p class="model"><b class="c">(1)</b> The air in the flask lost heat to the ice water. <b class="c">(2)</b> It contracted. <b class="c">(3)</b> The air took up less space, so the balloon went limp.</p></details>
+  <details><summary>Practice 4: Boiling water was poured into a thick glass cup and it cracked. Explain.</summary><p class="model"><b class="c">(1)</b> The inner layer of the glass gained heat from the boiling water faster than the outer layer. <b class="c">(2)</b> The inner layer expanded faster than the outer layer. <b class="c">(3)</b> The uneven expansion caused the glass to crack.</p></details>
+  <details><summary>Practice 5: A metal spoon in hot soup feels hotter than a plastic spoon. Explain.</summary><p class="model"><b class="c">(1)</b> Both spoons gained heat from the hot soup. <b class="c">(2)</b> Metal is a good conductor of heat, so heat passed quickly up the metal spoon; plastic is a poor conductor. <b class="c">(3)</b> More heat reached the hand through the metal spoon, so it felt hotter.</p></details>
+</section>
+
+<footer>Figures drawn with the open-source Colorfigures skill (MIT, April Zhu). Voice uses your browser&rsquo;s built-in speech; if it is silent, check that your device has an English voice installed.</footer>
+<script>
+document.querySelectorAll('.listen').forEach(b => b.onclick = () => {
+  if (typeof speechSynthesis === 'undefined') { b.textContent = 'Voice not supported here'; return; }
+  speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(b.dataset.say); u.lang = 'en-GB'; u.rate = .92; speechSynthesis.speak(u);
+});
+</script>
+</main></body></html>

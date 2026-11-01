@@ -1,0 +1,129 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Water and Its States</title>
+<style>
+:root{--paper:#f2efe7;--ink:#231e16;--muted:#6f685b;--rule:#ddd6c8;--card:#fbf8f0;--ok:#2f8a4a;--bad:#c0392b;--red:#d93a3a;--blue:#4a6fd0}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;padding:28px 16px 48px}
+main{max-width:860px;margin:0 auto}h1{font-size:26px;margin:0 0 4px}p.sub{color:var(--muted);margin:0 0 20px}
+.card{background:var(--card);border:1.5px solid var(--ink);border-radius:14px;box-shadow:4px 4px 0 var(--ink);padding:18px;margin:0 0 26px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.card h2{font-size:19px;margin:0}.tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.card iframe{width:100%;height:600px;border:1px solid var(--rule);border-radius:10px;background:var(--paper)}
+a.open{justify-self:start;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;text-decoration:none;background:var(--paper)}
+ul{margin:6px 0 0;padding-left:20px}li{margin:3px 0}
+details{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;background:var(--paper)}summary{cursor:pointer;font-weight:600}
+h3{font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 2px}
+p.back a{color:var(--muted)}footer{color:var(--muted);font-size:13px;margin-top:8px}
+.listen{font:inherit;color:var(--ink);background:#fff4d6;border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;cursor:pointer;margin-left:8px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}nav.toc a{color:var(--ink);font-size:13px;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;text-decoration:none;background:var(--card)}
+.path{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-weight:700;margin:4px 0}.path span{border:1.5px solid var(--ink);border-radius:8px;padding:3px 9px;background:var(--paper)}.path i{font-style:normal;color:var(--muted)}
+.path.o2 span{background:#fbd9d6}.path.co2 span{background:#dbe3f7}
+.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--paper)}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.box{border:1px solid var(--rule);border-radius:10px;padding:10px 12px;background:var(--paper)}
+.recap{border:1.5px dashed var(--ink);border-radius:10px;padding:10px 12px;background:#fff9ea}
+.btn{font:inherit;color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer;margin:3px}
+.btn.ok{background:#d9f0dc;border-color:var(--ok)}.btn.bad{background:#f7d9d4;border-color:var(--bad)}.btn[disabled]{opacity:.45;cursor:default}
+.order{display:flex;flex-wrap:wrap;gap:6px;min-height:40px;border:1px dashed var(--rule);border-radius:10px;padding:8px}
+.qrow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px;border-bottom:1px solid var(--rule);padding:6px 0}.msg{font-weight:700;min-height:1.4em}
+.model{border-left:4px solid #5a82c6;padding:6px 12px;background:var(--paper);border-radius:0 8px 8px 0;margin:6px 0}
+@media(max-width:560px){.card iframe{height:560px}}
+</style></head><body><main>
+<h1>Water and Its Three States</h1>
+<p class="back"><a href="index.html">&larr; All classes</a> &middot; <a href="p5.html">Primary 5</a> &middot; <a href="heatch.html">P4: Heat</a></p>
+<p class="sub">Primary 5 Cycles: the three states of water, melting, freezing, boiling, evaporation and condensation, what speeds up evaporation, and the water cycle. Four figures you can play with (each with a <b>Listen</b> button and a voice), quizzes and practice questions.</p>
+<nav class="toc"><a href="#c0">1 Three states</a><a href="#c1">2 Heating curve</a><a href="#c2">3 Evaporation</a><a href="#c3">4 Water cycle</a><a href="#c4">5 Quiz</a><a href="#c5">6 Practice</a></nav>
+
+<div class="recap"><b>Water exists in three states:</b>
+  <div class="path"><span>Solid (ice)</span><i>&#8644; melting / freezing (0 &deg;C)</i><span>Liquid (water)</span><i>&#8644; boiling, evaporation / condensation</i><span>Gas (water vapour, steam)</span></div>
+  Going right, water <b>gains heat</b>. Going left, it <b>loses heat</b>.</div>
+<p></p>
+
+<section class="card" id="c0">
+  <div><div class="tag">Recap from P4</div><h2>1. Melting, boiling, condensing</h2></div>
+  <iframe src="water.html" title="Water: melting, boiling, condensing" loading="lazy"></iframe>
+  <div><a class="open" href="water.html">Open full page</a></div>
+  <div class="wrap"><table><tr><th>Change</th><th>From &rarr; to</th><th>Heat</th><th>Temperature</th></tr>
+  <tr><td><b>Melting</b></td><td>Solid &rarr; liquid</td><td><b>Gains</b> heat</td><td>0 &deg;C (melting point)</td></tr>
+  <tr><td><b>Freezing</b></td><td>Liquid &rarr; solid</td><td><b>Loses</b> heat</td><td>0 &deg;C (freezing point)</td></tr>
+  <tr><td><b>Boiling</b></td><td>Liquid &rarr; gas</td><td><b>Gains</b> heat</td><td>100 &deg;C (boiling point)</td></tr>
+  <tr><td><b>Evaporation</b></td><td>Liquid &rarr; gas</td><td><b>Gains</b> heat</td><td>At <b>any</b> temperature, below 100 &deg;C</td></tr>
+  <tr><td><b>Condensation</b></td><td>Gas &rarr; liquid</td><td><b>Loses</b> heat</td><td>When water vapour touches a <b>cooler surface</b></td></tr></table></div>
+</section>
+
+<section class="card" id="c1">
+  <div><div class="tag">Melting point · boiling point</div><h2>2. The temperature graph</h2></div>
+  <iframe src="heating.html" title="Melting, boiling and freezing" loading="lazy"></iframe>
+  <div><a class="open" href="heating.html">Open full page</a><button class="listen" data-say="When ice is heated, its temperature rises until it reaches zero degrees. While it melts, the temperature stays at zero degrees, even though it is still gaining heat. Then the water warms up to one hundred degrees. While it boils, the temperature stays at one hundred degrees. When water freezes, it loses heat, and its temperature stays at zero degrees until it has all turned to ice.">Read key ideas aloud</button></div>
+  <div><h3>Key ideas</h3><ul><li>The graph is <b>flat</b> while the state is changing: at <b>0 &deg;C</b> (melting or freezing) and at <b>100 &deg;C</b> (boiling).</li><li>During melting and boiling, water is still <b>gaining heat</b>, but its temperature does <b>not</b> change until the change of state is complete.</li><li>Boiling makes <b>bubbles</b> all through the water. Steam is an invisible gas; the white &ldquo;cloud&rdquo; you see is tiny droplets formed when steam condenses.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Heat the ice and watch the graph. Stop heating, then put it in the freezer. Point to where the line is flat and say what is happening.</li></ul></div>
+  <details><summary>Question: Ice is being heated. Its temperature stays at 0 &deg;C for 5 minutes. Is it gaining heat? Explain.</summary><p class="model">Yes. It is gaining heat to melt. The temperature stays at 0 &deg;C until all the ice has melted.</p></details>
+</section>
+
+<section class="card" id="c2">
+  <div><div class="tag">Evaporation vs boiling</div><h2>3. What makes water evaporate faster?</h2></div>
+  <iframe src="evaporate.html" title="What makes water evaporate faster?" loading="lazy"></iframe>
+  <div><a class="open" href="evaporate.html">Open full page</a><button class="listen" data-say="Evaporation happens at any temperature, only at the surface of the water, and it is slow. Boiling happens only at one hundred degrees, all through the water, with bubbles, and it is fast. Water evaporates faster when the temperature is higher, when the exposed surface area is larger, when there is wind, and when the air is less humid.">Read key ideas aloud</button></div>
+  <div class="wrap"><table><tr><th></th><th>Boiling</th><th>Evaporation</th></tr>
+  <tr><td><b>Speed</b></td><td>Fast</td><td>Slow</td></tr>
+  <tr><td><b>Temperature</b></td><td>Only at 100 &deg;C</td><td>At any temperature (between 0 &deg;C and 100 &deg;C)</td></tr>
+  <tr><td><b>Where</b></td><td>Throughout the liquid (bubbles form)</td><td>Only at the surface</td></tr></table></div>
+  <div><h3>Faster evaporation when there is</h3><ul><li><b>Higher temperature</b></li><li><b>Larger exposed surface area</b></li><li><b>Wind</b> (moving air)</li><li><b>Lower humidity</b> (drier air)</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Pick each factor and wait 2 hours twice. Only one thing is different between A and B each time. This is a fair test.</li></ul></div>
+  <details><summary>Question: Why do wet clothes dry faster on a sunny, windy day?</summary><p class="model">The higher temperature and the wind both increase the rate of evaporation, so the water in the clothes evaporates faster.</p></details>
+</section>
+
+<section class="card" id="c3">
+  <div><div class="tag">The natural water cycle</div><h2>4. The water cycle</h2></div>
+  <iframe src="cycle.html" title="The water cycle" loading="lazy"></iframe>
+  <div><a class="open" href="cycle.html">Open full page</a><button class="listen" data-say="The water cycle is driven by the sun. The sun heats water on Earth, and it evaporates into water vapour. The water vapour rises, touches cooler air, loses heat and condenses into tiny water droplets that form clouds. The droplets grow heavy and fall as rain or snow. The water flows back to the sea, and the cycle continues. It gives living things a continuous supply of fresh water.">Read key ideas aloud</button></div>
+  <div class="path"><span>Sun heats water</span><i>&rarr;</i><span>Evaporation</span><i>&rarr;</i><span>Condensation (clouds)</span><i>&rarr;</i><span>Precipitation (rain)</span><i>&rarr;</i><span>Collection (rivers, sea)</span></div>
+  <div><h3>Key ideas</h3><ul><li>The water cycle is driven by the <b>sun</b>, which provides heat.</li><li>Water vapour rises, touches <b>cooler air</b>, <b>loses heat</b> and <b>condenses</b> into tiny droplets that form <b>clouds</b>.</li><li>The droplets grow heavy and fall as <b>precipitation</b> (rain or snow).</li><li><b>Importance:</b> a <b>continuous supply of fresh water</b> for living things.</li></ul></div>
+  <div><h3>Try it</h3><ul><li>Watch a full cycle. Then switch the sun off: no new water evaporates, and the cycle stops.</li></ul></div>
+</section>
+
+<section class="card" id="c4">
+  <div><div class="tag">Check yourself</div><h2>5. Quick quiz</h2></div>
+  <div><h3>Put the water cycle in order</h3><div id="pool1"></div><div class="order" id="ord1"></div><div class="msg" id="m1"></div></div>
+  <div><h3>Gains or loses heat?</h3><div id="gl"></div><div class="msg" id="glmsg"></div></div>
+  <div><h3>Name the change</h3><div id="nc"></div><div class="msg" id="ncmsg"></div></div>
+  <div><h3>Boiling or evaporation?</h3><div id="be"></div><div class="msg" id="bemsg"></div></div>
+</section>
+
+<section class="card" id="c5">
+  <div><div class="tag">Exam skills</div><h2>6. Practice questions</h2></div>
+  <details><summary>Practice 1: Water droplets form on the outside of a glass of iced water. Explain why.</summary><p class="model">Water vapour in the surrounding air touches the cooler surface of the glass, loses heat and condenses into water droplets.</p></details>
+  <details><summary>Practice 2: Give two differences between boiling and evaporation.</summary><p class="model">Boiling happens only at 100 &deg;C, but evaporation happens at any temperature. Boiling takes place throughout the liquid, but evaporation takes place only at the surface. (Also: boiling is fast, evaporation is slow.)</p></details>
+  <details><summary>Practice 3: A puddle dries up faster on a sunny day than on a cloudy day. Why?</summary><p class="model">On a sunny day, the temperature is higher, so the water gains heat faster and evaporates faster.</p></details>
+  <details><summary>Practice 4: Explain how clouds form.</summary><p class="model">Water evaporates and the water vapour rises. Higher up, it touches cooler air, loses heat and condenses into tiny water droplets. Many droplets together form a cloud.</p></details>
+  <details><summary>Practice 5: Why is the water cycle important to living things?</summary><p class="model">It ensures a continuous supply of fresh water for living things.</p></details>
+</section>
+
+<footer>Figures drawn with the open-source Colorfigures skill (MIT, April Zhu). Voice uses your browser&rsquo;s built-in speech; if it is silent, check that your device has an English voice installed.</footer>
+<script>
+const speak = t => { if (typeof speechSynthesis === 'undefined') return; speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t); u.lang = 'en-GB'; u.rate = .92; speechSynthesis.speak(u); };
+document.querySelectorAll('.listen').forEach(b => b.onclick = () => speak(b.dataset.say));
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+function orderQuiz(poolId, ordId, msgId, items, done){
+  const pool = document.getElementById(poolId), order = document.getElementById(ordId), msg = document.getElementById(msgId); let n = 0;
+  [...items].sort(() => Math.random() - .5).forEach(o => { const b = el('button', 'btn', o); pool.appendChild(b);
+    b.onclick = () => { if (b.disabled) return;
+      if (o === items[n]){ b.disabled = true; b.classList.add('ok'); order.appendChild(el('span', 'btn ok', (n + 1) + '. ' + o)); n++; msg.textContent = '';
+        if (n === items.length){ msg.textContent = done; msg.style.color = 'var(--ok)'; speak(done); } }
+      else { b.classList.add('bad'); setTimeout(() => b.classList.remove('bad'), 600); msg.textContent = o + ' is not next.'; msg.style.color = 'var(--bad)'; } }; });
+}
+orderQuiz('pool1', 'ord1', 'm1', ['Sun heats the sea', 'Evaporation', 'Condensation', 'Clouds form', 'Precipitation', 'Collection'], 'Well done! The sun heats the water, it evaporates, the vapour condenses into clouds, rain falls, and the water collects in rivers and the sea.');
+function choiceQuiz(id, msgId, items, opts){
+  const box = document.getElementById(id), msg = document.getElementById(msgId); let right = 0, done = 0;
+  items.forEach(([q, ans, why]) => { const row = el('div', 'qrow'); row.appendChild(el('span', '', q)); const bs = el('span');
+    opts.forEach(o => { const b = el('button', 'btn', o); bs.appendChild(b);
+      b.onclick = () => { if (row.dataset.done) return; row.dataset.done = 1; done++; const ok = o === ans; if (ok) right++;
+        b.classList.add(ok ? 'ok' : 'bad'); if (!ok) [...bs.children].find(x => x.textContent === ans).classList.add('ok');
+        if (why) row.appendChild(el('div', '', (ok ? 'Correct. ' : 'Not quite. ') + why)).style.cssText = 'flex-basis:100%;color:var(--muted);font-size:14px';
+        if (done === items.length){ msg.textContent = 'Score: ' + right + ' / ' + items.length; msg.style.color = right === items.length ? 'var(--ok)' : 'var(--ink)'; } }; });
+    row.appendChild(bs); box.appendChild(row); });
+}
+choiceQuiz('gl', 'glmsg', [['Melting', 'Gains heat', ''], ['Freezing', 'Loses heat', ''], ['Boiling', 'Gains heat', ''], ['Evaporation', 'Gains heat', ''], ['Condensation', 'Loses heat', '']], ['Gains heat', 'Loses heat']);
+choiceQuiz('nc', 'ncmsg', [['An ice cube turns into water on a plate', 'Melting', ''], ['Mist forms on a bathroom mirror', 'Condensation', ''],
+  ['Wet clothes dry on a line', 'Evaporation', ''], ['Water in an ice tray turns solid', 'Freezing', ''], ['Bubbles form all through a kettle of water at 100 C', 'Boiling', '']],
+  ['Melting', 'Freezing', 'Boiling', 'Evaporation', 'Condensation']);
+choiceQuiz('be', 'bemsg', [['Only at 100 C', 'Boiling', ''], ['At any temperature', 'Evaporation', ''], ['Only at the surface', 'Evaporation', ''], ['Bubbles form throughout the liquid', 'Boiling', ''], ['Slow', 'Evaporation', '']], ['Boiling', 'Evaporation']);
+</script>
+</main></body></html>
